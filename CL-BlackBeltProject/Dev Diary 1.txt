@@ -1,0 +1,3 @@
+Dev Diary 1
+
+Hello, my name is Chelsea and i've been at Code Ninjas for 2 years. My three favourite things about being a ninja include: 1, I learned how to code. 2, I feel happy when I progress to different levels/finish a project. 3, I learn different things I didn't know about before. For my game name, I haven't figured out a name yet. The mechanics for my game needs the player to move the mouse around. My game takes inspiration from Chef Codey and Cooking Mama. I think I will face some troubling coding and the whole game in general. I can try to solve the problems I face and I can use google and ask for help.
