@@ -4,47 +4,42 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private Animator anim;
-    private Rigidbody rb;
-    private Quaternion lastLook;
-    public float speed;
-    private bool canMove;
+    [Header("Movement")]
+    public float moveSpeed;
 
-    void Start()
+    public Transform orientation;
+
+    float horizontalInput;
+    float verticalInput;
+
+    Vector3 moveDirection;
+    Rigidbody rb;
+
+    private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
-        //anim = GetComponent<Animator>();
-        lastLook = transform.rotation;
-        Invoke("allowMovement", 3);
+        rb.freezeRotation = true;
     }
 
-    void allowMovement()
+    private void Update()
     {
-        canMove = true;
+        MyInput();
     }
 
-    void Update()
+    private void FixedUpdate()
     {
-        if (canMove == true)
-        {
-            float horizontal = Input.GetAxis("Horizontal");
-            float vertical = Input.GetAxis("Vertical");
-
-            Vector3 movementVector = new Vector3(horizontal, 0, vertical).normalized;
-
-            if (movementVector.magnitude != 0)
-            {
-                lastLook = Quaternion.LookRotation(movementVector);
-            }
-            transform.rotation = lastLook;
-
-            Vector3 movement = new Vector3(horizontal, 0, vertical) * speed / 100;
-            rb.MovePosition(transform.position + movement);
-
-            //anim.SetFloat("horizontalVector", movementVector.magnitude);
-            //anim.SetFloat("verticalVector", 0);
-        }
+        MovePlayer();
+    }
+    private void MyInput()
+    {
+        horizontalInput = Input.GetAxisRaw("Horizontal");
+        verticalInput = Input.GetAxisRaw("Vertical");
     }
 
+    private void MovePlayer()
+    {
+        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+
+        rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+    }
 }
