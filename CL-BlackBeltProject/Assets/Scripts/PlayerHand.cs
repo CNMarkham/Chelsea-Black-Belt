@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerHand : MonoBehaviour
 {
     public Transform cam;
-    public GameObject rice;
+    public GameObject ricePrefab;
 
     private LayerMask pickupLayer;
     private LayerMask tableLayer;
@@ -24,37 +24,35 @@ public class PlayerHand : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && heldPickup == null)
         {
             //check if there is any items to pickup
             //if there is an item, pickup the item
             if (Physics.Raycast(cam.position, cam.forward, out RaycastHit hit, 1, pickupLayer))
             {
+                //when we pick up something, we don't want it to fall or anything, so make it kinematic
                 hit.rigidbody.isKinematic = true;
+                //we'll pick up things that have rigidbodies so that we can drop them and they'll have gravity and physics
                 heldPickup = hit.rigidbody;
+                //get the distance between our camera and the held object so we know exactly where to hold it later
                 heldDistance = (hit.transform.position - cam.position).magnitude;
             }
             else if (Physics.Raycast(cam.position, cam.forward, 1, riceLayer)) // Supposed to instantiate rice when interacting with the rice bowl given a rice layer
             {
-                Debug.Log("rice");
-                Instantiate(rice, transform, false);
-            }
-
-            
+                heldPickup = Instantiate(ricePrefab).GetComponent<Rigidbody>();
+                heldPickup.isKinematic = true;
+                heldDistance = 0.5f;
+            }            
         }
-        if (Input.GetKey("e")) // Supposed to drop held food item if the player is looking at a table layer it can put food on
+        if(Input.GetMouseButtonDown(1) && heldPickup != null)
         {
-            if (Physics.Raycast(cam.position, cam.forward, out RaycastHit hit, 1, tableLayer) && heldPickup != null)
-            {
-                Debug.Log("held");
-                hit.rigidbody.isKinematic = false;
-                heldPickup = null;
-            }
+            heldPickup.isKinematic = false;
+            heldPickup = null;
+
         }
 
-
-
-            if (heldPickup != null)
+        //heldpickup items will apear infront of the camera
+        if (heldPickup != null)
         {
             heldPickup.transform.position = cam.position + cam.forward * heldDistance;
         }
