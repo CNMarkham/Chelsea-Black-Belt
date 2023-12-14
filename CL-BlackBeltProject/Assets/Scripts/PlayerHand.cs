@@ -7,12 +7,12 @@ public class PlayerHand : MonoBehaviour
     public Transform cam;
     public GameObject ricePrefab;
 
-    private LayerMask pickupLayer;
+    public static LayerMask pickupLayer;
     private LayerMask tableLayer;
     private LayerMask riceLayer;
     private Rigidbody heldPickup;
     private float heldDistance;
-    // Start is called before the first frame update
+   
     void Start()
     {
         pickupLayer = LayerMask.GetMask("Pickup");
@@ -21,7 +21,6 @@ public class PlayerHand : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && heldPickup == null)
@@ -37,7 +36,7 @@ public class PlayerHand : MonoBehaviour
                 //get the distance between our camera and the held object so we know exactly where to hold it later
                 heldDistance = (hit.transform.position - cam.position).magnitude;
             }
-            else if (Physics.Raycast(cam.position, cam.forward, 1, riceLayer)) // Supposed to instantiate rice when interacting with the rice bowl given a rice layer
+            else if (Physics.Raycast(cam.position, cam.forward, 1, riceLayer)) //instantiates rice when interacting with the rice bowl given a rice layer
             {
                 heldPickup = Instantiate(ricePrefab).GetComponent<Rigidbody>();
                 heldPickup.isKinematic = true;

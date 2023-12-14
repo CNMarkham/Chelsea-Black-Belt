@@ -59,5 +59,43 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ee4c9acd80115834798ed7b4a01f122f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee4c9acd80115834798ed7b4a01f122f, type: 3}
+--- !u!1 &7749533367711679839 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ee4c9acd80115834798ed7b4a01f122f, type: 3}
+  m_PrefabInstance: {fileID: 7442961839923722254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &-4165884405542764418
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7749533367711679839}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &3051311764599541840
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7749533367711679839}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.17290652, y: 0.015766528, z: 0.38542518}
+  m_Center: {x: 0.0022554882, y: -0.0010842294, z: 0.0011837184}
