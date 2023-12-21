@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - HoldableRice
+  - Nori
+  - SalmonCut
   layers:
   - Default
   - TransparentFX

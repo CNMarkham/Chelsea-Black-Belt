@@ -6,6 +6,9 @@ public class IngredientController : MonoBehaviour
 {
 
     public GameObject rice;
+    public GameObject noriPrefab;
+    public GameObject salmonCutPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,12 +23,34 @@ public class IngredientController : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
         if (other.gameObject.tag == "HoldableRice")
-        {            
-            rice.SetActive(true);
-            Destroy(other.gameObject);
+        {
+            if (!other.gameObject.GetComponent<Rigidbody>().isKinematic)
+            {
+                rice.SetActive(true);
+                Destroy(other.gameObject);           
+            }
+
 
         }
+        if (other.gameObject.tag == "Nori")
+        {
+            if (!other.gameObject.GetComponent<Rigidbody>().isKinematic)
+            {
+                noriPrefab.SetActive(true);
+                Destroy(other.gameObject);
+            }
+
+        }
+        if (other.gameObject.tag == "SalmonCut")
+        {
+            if (!other.gameObject.GetComponent<Rigidbody>().isKinematic)
+            {
+                salmonCutPrefab.SetActive(true);
+                Destroy(other.gameObject);
+            }
+
+        }
+
     }
 }
