@@ -5,6 +5,11 @@ using UnityEngine;
 public class WoodenBoardReciever : MonoBehaviour
 {
     public GameObject salmonPrefab;
+
+    public GameObject[] cutSalmonPieces;
+    public bool isCuttingSalmon;
+    public int salmonPiecesCut;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +22,14 @@ public class WoodenBoardReciever : MonoBehaviour
         
     }
 
+    public void CutSalmon()
+    {
+        cutSalmonPieces[salmonPiecesCut].SetActive(true);
+        salmonPiecesCut+=1;
+        
+        
+    }
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Salmon")
@@ -24,7 +37,7 @@ public class WoodenBoardReciever : MonoBehaviour
             if (!other.gameObject.GetComponent<Rigidbody>().isKinematic)
             {
                 salmonPrefab.SetActive(true);
-                Destroy(gameObject);
+                Destroy(other.gameObject);
             }
 
         }

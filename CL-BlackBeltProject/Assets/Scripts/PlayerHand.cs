@@ -8,10 +8,11 @@ public class PlayerHand : MonoBehaviour
     public GameObject ricePrefab;
     public IngredientController ingredientController;
     public GameObject sushiRollPrefab;
+    public GameObject cutSalmonPrefab;
+    public GameObject salmonPrefab;
     public float requiredDragDistance = -10f;
 
     private LayerMask pickupLayer;
-    private LayerMask tableLayer;
     private LayerMask riceLayer;
     private Rigidbody heldPickup;
     private float heldDistance;
@@ -20,7 +21,6 @@ public class PlayerHand : MonoBehaviour
     void Start()
     {
         pickupLayer = LayerMask.GetMask("Pickup");
-        tableLayer = LayerMask.GetMask("Table");
         riceLayer = LayerMask.GetMask("Rice");
 
     }
@@ -59,12 +59,18 @@ public class PlayerHand : MonoBehaviour
         {
             heldPickup.transform.position = cam.position + cam.forward * heldDistance;
         }
-        if (CheckVerticalMotion() && ingredientController.rice.activeSelf && ingredientController.noriPrefab.activeSelf && ingredientController.salmonCutPrefab.activeSelf)
+        if (CheckVerticalMotion() && ingredientController.rice.activeSelf && ingredientController.noriPrefab.activeSelf && ingredientController.thinSalmonPrefab.activeSelf)
         {
             ingredientController.rice.SetActive(false);
             ingredientController.noriPrefab.SetActive(false);
-            ingredientController.salmonCutPrefab.SetActive(false);
+            ingredientController.thinSalmonPrefab.SetActive(false);
             sushiRollPrefab.SetActive(true);
+        }
+
+        if (CheckVerticalMotion() && salmonPrefab.activeSelf)
+        {
+            salmonPrefab.SetActive(false);
+            cutSalmonPrefab.SetActive(true);
         }
     }
 

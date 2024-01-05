@@ -7,7 +7,7 @@ public class IngredientController : MonoBehaviour
 
     public GameObject rice;
     public GameObject noriPrefab;
-    public GameObject salmonCutPrefab;
+    public GameObject thinSalmonPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -42,11 +42,11 @@ public class IngredientController : MonoBehaviour
             }
 
         }
-        if (other.gameObject.tag == "SalmonCut")
+        if (other.gameObject.tag == "ThinSalmon")
         {
             if (!other.gameObject.GetComponent<Rigidbody>().isKinematic)
             {
-                salmonCutPrefab.SetActive(true);
+                thinSalmonPrefab.SetActive(true);
                 Destroy(other.gameObject);
             }
 
