@@ -7,6 +7,7 @@ public class PlayerHand : MonoBehaviour
     public Transform cam;
     public GameObject ricePrefab;
     public IngredientController ingredientController;
+    public WoodenBoardReciever woodenBoardReciever;
     public GameObject sushiRollPrefab;
     public GameObject cutSalmonPrefab;
     public GameObject salmonPrefab;
@@ -59,7 +60,10 @@ public class PlayerHand : MonoBehaviour
         {
             heldPickup.transform.position = cam.position + cam.forward * heldDistance;
         }
-        if (CheckVerticalMotion() && ingredientController.rice.activeSelf && ingredientController.noriPrefab.activeSelf && ingredientController.thinSalmonPrefab.activeSelf)
+
+        bool swipedDown = CheckVerticalMotion();
+
+        if (swipedDown && ingredientController.rice.activeSelf && ingredientController.noriPrefab.activeSelf && ingredientController.thinSalmonPrefab.activeSelf)
         {
             ingredientController.rice.SetActive(false);
             ingredientController.noriPrefab.SetActive(false);
@@ -67,10 +71,10 @@ public class PlayerHand : MonoBehaviour
             sushiRollPrefab.SetActive(true);
         }
 
-        if (CheckVerticalMotion() && salmonPrefab.activeSelf)
+        if (swipedDown && woodenBoardReciever.isCuttingSalmon) 
         {
             salmonPrefab.SetActive(false);
-            cutSalmonPrefab.SetActive(true);
+            woodenBoardReciever.CutSalmon();
         }
     }
 
@@ -82,6 +86,7 @@ public class PlayerHand : MonoBehaviour
 
             if (recentMotion < requiredDragDistance)
             {
+                recentMotion = 0;
                 return true;
             }
         }

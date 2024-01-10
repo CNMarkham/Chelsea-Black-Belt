@@ -24,10 +24,16 @@ public class WoodenBoardReciever : MonoBehaviour
 
     public void CutSalmon()
     {
+        if (cutSalmonPieces[3].activeSelf)
+        {
+            return;
+        }
         cutSalmonPieces[salmonPiecesCut].SetActive(true);
+        if (salmonPiecesCut > 0)
+        {
+            cutSalmonPieces[salmonPiecesCut-1].SetActive(false);
+        }
         salmonPiecesCut+=1;
-        
-        
     }
 
     public void OnTriggerEnter(Collider other)
@@ -37,6 +43,7 @@ public class WoodenBoardReciever : MonoBehaviour
             if (!other.gameObject.GetComponent<Rigidbody>().isKinematic)
             {
                 salmonPrefab.SetActive(true);
+                isCuttingSalmon = true;
                 Destroy(other.gameObject);
             }
 
