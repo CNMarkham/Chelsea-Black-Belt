@@ -7261,7 +7261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8153188628610229749, guid: b1c9a7d5deafa7540a8e16cb21654ad3, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8153188628610229749, guid: b1c9a7d5deafa7540a8e16cb21654ad3, type: 3}
       propertyPath: m_IsActive
@@ -7431,7 +7431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1008986942
 Transform:
   m_ObjectHideFlags: 0
@@ -7461,7 +7461,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1025700335}
-  m_Layer: 0
+  - component: {fileID: 1025700336}
+  m_Layer: 7
   m_Name: Cut Salmon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7485,6 +7486,19 @@ Transform:
   m_Father: {fileID: 1392659907}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1025700336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025700334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d33ff78ee5d4594ebb41d35959022b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salmonToEnable: {fileID: 1899985825}
 --- !u!1001 &1105320264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7674,6 +7688,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8822025487697149775, guid: b1c9a7d5deafa7540a8e16cb21654ad3, type: 3}
   m_PrefabInstance: {fileID: 967031364}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1199558665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199558661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d33ff78ee5d4594ebb41d35959022b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salmonToEnable: {fileID: 1025700334}
 --- !u!1 &1239896225 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1825169943741794320, guid: 0dfcd0430d1449d4dad9a6c3c81bb77d, type: 3}
@@ -7909,7 +7936,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1345063801}
-  m_Layer: 0
+  - component: {fileID: 1345063802}
+  m_Layer: 7
   m_Name: Cut Salmon (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7935,6 +7963,19 @@ Transform:
   m_Father: {fileID: 1392659907}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1345063802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345063800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d33ff78ee5d4594ebb41d35959022b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salmonToEnable: {fileID: 1008986941}
 --- !u!1 &1363745023
 GameObject:
   m_ObjectHideFlags: 0
@@ -10279,7 +10320,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1899985826}
-  m_Layer: 0
+  - component: {fileID: 1899985827}
+  m_Layer: 7
   m_Name: Cut Salmon (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10304,6 +10346,19 @@ Transform:
   m_Father: {fileID: 1392659907}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1899985827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899985825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d33ff78ee5d4594ebb41d35959022b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salmonToEnable: {fileID: 1345063800}
 --- !u!1001 &1919057982
 PrefabInstance:
   m_ObjectHideFlags: 0

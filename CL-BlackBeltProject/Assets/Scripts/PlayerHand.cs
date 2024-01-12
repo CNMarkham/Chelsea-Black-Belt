@@ -13,6 +13,7 @@ public class PlayerHand : MonoBehaviour
     public GameObject salmonPrefab;
     public float requiredDragDistance = -10f;
 
+    private LayerMask choppableLayer;
     private LayerMask pickupLayer;
     private LayerMask riceLayer;
     private Rigidbody heldPickup;
@@ -21,6 +22,7 @@ public class PlayerHand : MonoBehaviour
    
     void Start()
     {
+        choppableLayer = LayerMask.GetMask("Choppable");
         pickupLayer = LayerMask.GetMask("Pickup");
         riceLayer = LayerMask.GetMask("Rice");
 
@@ -61,24 +63,35 @@ public class PlayerHand : MonoBehaviour
             heldPickup.transform.position = cam.position + cam.forward * heldDistance;
         }
 
-        bool swipedDown = CheckVerticalMotion();
+        bool swipedDown = CheckSwipeDown();
 
-        if (swipedDown && ingredientController.rice.activeSelf && ingredientController.noriPrefab.activeSelf && ingredientController.thinSalmonPrefab.activeSelf)
+        if (swipedDown)
         {
-            ingredientController.rice.SetActive(false);
-            ingredientController.noriPrefab.SetActive(false);
-            ingredientController.thinSalmonPrefab.SetActive(false);
-            sushiRollPrefab.SetActive(true);
+            print("swiped");
+            if (Physics.BoxCast(cam.position, new Vector3(1f, 1f, 0.05f), cam.forward, out RaycastHit hitInfo, cam.rotation, 75f, choppableLayer))
+            {
+                print("swiped 2");
+                hitInfo.transform.GetComponent<IChoppable>().GetChopped();
+            }
         }
 
-        if (swipedDown && woodenBoardReciever.isCuttingSalmon) 
-        {
-            salmonPrefab.SetActive(false);
-            woodenBoardReciever.CutSalmon();
-        }
+
+        //if (swipedDown && ingredientController.rice.activeSelf && ingredientController.noriPrefab.activeSelf && ingredientController.thinSalmonPrefab.activeSelf)
+        //{
+        //    ingredientController.rice.SetActive(false);
+        //    ingredientController.noriPrefab.SetActive(false);
+        //    ingredientController.thinSalmonPrefab.SetActive(false);
+        //    sushiRollPrefab.SetActive(true);
+        //}
+
+        //if (swipedDown && woodenBoardReciever.isCuttingSalmon) 
+        //{
+        //    salmonPrefab.SetActive(false);
+        //    woodenBoardReciever.CutSalmon();
+        //}
     }
 
-    private bool CheckVerticalMotion()
+    private bool CheckSwipeDown()
     {
         if (Input.GetMouseButton(0))
         {
