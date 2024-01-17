@@ -19,7 +19,11 @@ public class PlayerHand : MonoBehaviour
     private Rigidbody heldPickup;
     private float heldDistance;
     private float recentMotion;
-   
+
+    private bool swipedDown;
+    private bool canSwipeDown = true;
+
+
     void Start()
     {
         choppableLayer = LayerMask.GetMask("Choppable");
@@ -63,7 +67,7 @@ public class PlayerHand : MonoBehaviour
             heldPickup.transform.position = cam.position + cam.forward * heldDistance;
         }
 
-        bool swipedDown = CheckSwipeDown();
+         swipedDown = CheckSwipeDown();
 
         if (swipedDown)
         {
@@ -93,18 +97,21 @@ public class PlayerHand : MonoBehaviour
 
     private bool CheckSwipeDown()
     {
+        
         if (Input.GetMouseButton(0))
         {
             recentMotion += Input.GetAxisRaw("Mouse Y");
 
-            if (recentMotion < requiredDragDistance)
+            if (recentMotion < requiredDragDistance && canSwipeDown)
             {
                 recentMotion = 0;
+                canSwipeDown = false;
                 return true;
             }
         }
         else 
         {
+            canSwipeDown = true;
             recentMotion = 0;
         }
         return false;
