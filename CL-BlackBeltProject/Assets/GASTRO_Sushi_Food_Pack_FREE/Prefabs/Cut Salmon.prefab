@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6197167039345210586}
   - component: {fileID: 7190764723474155201}
+  - component: {fileID: 8608705224938323455}
   m_Layer: 7
   m_Name: Cut Salmon
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6197167039345210587}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.718, y: -2.53, z: -10.368}
+  m_LocalPosition: {x: 19.7009, y: 0.757, z: -10.368}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -47,6 +48,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   salmonToEnable: {fileID: 0}
+--- !u!136 &8608705224938323455
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6197167039345210587}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.010342807
+  m_Height: 0.115875244
+  m_Direction: 0
+  m_Center: {x: 0.001203537, y: -0.003977269, z: 0.023925304}
 --- !u!1001 &6197167039420016186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80,15 +95,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7557116244399441280, guid: 6dfa186c65d70d44e84cf35ebd4b906d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.6132
+      value: 0.054000854
       objectReference: {fileID: 0}
     - target: {fileID: 7557116244399441280, guid: 6dfa186c65d70d44e84cf35ebd4b906d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.4861903
+      value: -0.0042022467
       objectReference: {fileID: 0}
     - target: {fileID: 7557116244399441280, guid: 6dfa186c65d70d44e84cf35ebd4b906d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.378027
+      value: 0.0037269592
       objectReference: {fileID: 0}
     - target: {fileID: 7557116244399441280, guid: 6dfa186c65d70d44e84cf35ebd4b906d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -170,15 +185,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8822025487697149775, guid: b1c9a7d5deafa7540a8e16cb21654ad3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.6745
+      value: -0.0073
       objectReference: {fileID: 0}
     - target: {fileID: 8822025487697149775, guid: b1c9a7d5deafa7540a8e16cb21654ad3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.4861927
+      value: -0.0042
       objectReference: {fileID: 0}
     - target: {fileID: 8822025487697149775, guid: b1c9a7d5deafa7540a8e16cb21654ad3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.3834
+      value: 0.0091
       objectReference: {fileID: 0}
     - target: {fileID: 8822025487697149775, guid: b1c9a7d5deafa7540a8e16cb21654ad3, type: 3}
       propertyPath: m_LocalRotation.w

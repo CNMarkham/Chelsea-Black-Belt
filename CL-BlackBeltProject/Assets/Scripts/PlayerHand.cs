@@ -8,7 +8,6 @@ public class PlayerHand : MonoBehaviour
     public GameObject ricePrefab;
     public IngredientController ingredientController;
     public WoodenBoardReciever woodenBoardReciever;
-    public GameObject sushiRollPrefab;
     public GameObject cutSalmonPrefab;
     public GameObject salmonPrefab;
     public float requiredDragDistance = -10f;
@@ -72,27 +71,13 @@ public class PlayerHand : MonoBehaviour
         if (swipedDown)
         {
             print("swiped");
-            if (Physics.BoxCast(cam.position, new Vector3(1f, 1f, 0.05f), cam.forward, out RaycastHit hitInfo, cam.rotation, 75f, choppableLayer))
+            if (Physics.BoxCast(cam.position, new Vector3(1f, 1f, 0.05f), cam.forward, out RaycastHit hitInfo, cam.rotation, 75f, choppableLayer, QueryTriggerInteraction.Collide))
             {
                 print("swiped 2");
-                hitInfo.transform.GetComponent<IChoppable>().GetChopped();
+                hitInfo.transform.GetComponent<ISwipeable>().GetSwiped();
             }
         }
 
-
-        //if (swipedDown && ingredientController.rice.activeSelf && ingredientController.noriPrefab.activeSelf && ingredientController.thinSalmonPrefab.activeSelf)
-        //{
-        //    ingredientController.rice.SetActive(false);
-        //    ingredientController.noriPrefab.SetActive(false);
-        //    ingredientController.thinSalmonPrefab.SetActive(false);
-        //    sushiRollPrefab.SetActive(true);
-        //}
-
-        //if (swipedDown && woodenBoardReciever.isCuttingSalmon) 
-        //{
-        //    salmonPrefab.SetActive(false);
-        //    woodenBoardReciever.CutSalmon();
-        //}
     }
 
     private bool CheckSwipeDown()

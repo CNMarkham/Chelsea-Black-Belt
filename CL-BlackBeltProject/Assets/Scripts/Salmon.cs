@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Salmon : MonoBehaviour, IChoppable
+public class Salmon : MonoBehaviour, ISwipeable
 {
     public GameObject salmonToEnable;
-    public void GetChopped()
+    public void GetSwiped()
     {
         print("swiped 3");
         gameObject.SetActive(false);
