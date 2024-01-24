@@ -11,5 +11,4 @@ public class Salmon : MonoBehaviour, ISwipeable
         gameObject.SetActive(false);
         salmonToEnable.SetActive(true);
     }
-
 }
