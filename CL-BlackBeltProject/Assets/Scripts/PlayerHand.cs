@@ -45,17 +45,20 @@ public class PlayerHand : MonoBehaviour
                 heldPickup = hit.rigidbody;
                 //get the distance between our camera and the held object so we know exactly where to hold it later
                 heldDistance = (hit.transform.position - cam.position).magnitude;
+                hit.collider.GetComponent<Collider>().enabled = false;
             }
             else if (Physics.Raycast(cam.position, cam.forward, 1, riceLayer)) //instantiates rice when interacting with the rice bowl given a rice layer
             {
                 heldPickup = Instantiate(ricePrefab).GetComponent<Rigidbody>();
                 heldPickup.isKinematic = true;
+                hit.collider.GetComponent<Collider>().enabled = false;
                 heldDistance = 0.5f;
             }            
         }
         if(Input.GetMouseButtonDown(1) && heldPickup != null)
         {
-            heldPickup.isKinematic = false;
+            heldPickup.isKinematic = false; 
+            heldPickup.GetComponent<Collider>().enabled = true;
             heldPickup = null;
 
         }
