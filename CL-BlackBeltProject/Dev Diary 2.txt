@@ -14,4 +14,4 @@ I had a lot trouble trying to understand what to do next in my game. I was able 
 
 What challenges will you foresee when converting your prototype to a full game?
 
-I think that I will have trouble trying to figure what to do and how everything will works.
+I think that I will have trouble trying to figure what to do and how everything will work.
