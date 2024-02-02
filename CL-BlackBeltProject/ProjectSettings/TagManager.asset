@@ -9,6 +9,8 @@ TagManager:
   - SalmonCut
   - Salmon
   - ThinSalmon
+  - SushiMat
+  - SalmonBox
   layers:
   - Default
   - TransparentFX

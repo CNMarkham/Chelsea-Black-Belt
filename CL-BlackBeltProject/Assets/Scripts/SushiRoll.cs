@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class SushiRoll : MonoBehaviour, ISwipeable
 {
-    public IngredientController ingredientController;
-
+    public GameObject rice;
+    public GameObject noriPrefab;
+    public GameObject thinSalmonPrefab;
     private bool alreadyCut;
 
     public void GetSwiped()
     {
-        if (ingredientController.rice.activeSelf && ingredientController.noriPrefab.activeSelf && ingredientController.thinSalmonPrefab.activeSelf)
+        if (rice.activeSelf && noriPrefab.activeSelf && thinSalmonPrefab.activeSelf)
         {
-            ingredientController.rice.SetActive(false);
-            ingredientController.noriPrefab.SetActive(false);
-            ingredientController.thinSalmonPrefab.SetActive(false);
+            rice.SetActive(false);
+            noriPrefab.SetActive(false);
+            thinSalmonPrefab.SetActive(false);
             GetComponent<MeshRenderer>().enabled = true;
         }
     }
