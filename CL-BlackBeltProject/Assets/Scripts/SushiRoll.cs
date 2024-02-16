@@ -12,6 +12,10 @@ public class SushiRoll : MonoBehaviour, ISwipeable
 
     public void GetSwiped()
     {
+        if(GetComponent<MeshRenderer>().enabled == false)
+        {
+            return;
+        }
         if (cutCounter == 0)
         {
             if (rice.activeSelf && noriPrefab.activeSelf && thinSalmonPrefab.activeSelf)
