@@ -12,10 +12,10 @@ public class SushiRoll : MonoBehaviour, ISwipeable
 
     public void GetSwiped()
     {
-        if(GetComponent<MeshRenderer>().enabled == false)
-        {
-            return;
-        }
+        //if(GetComponent<MeshRenderer>().enabled == false)
+        //{
+        //    return;
+        //}
         if (cutCounter == 0)
         {
             if (rice.activeSelf && noriPrefab.activeSelf && thinSalmonPrefab.activeSelf)
@@ -24,6 +24,7 @@ public class SushiRoll : MonoBehaviour, ISwipeable
             noriPrefab.SetActive(false);
             thinSalmonPrefab.SetActive(false);
             GetComponent<MeshRenderer>().enabled = true;
+        cutCounter += 1;
             }
         }
 
@@ -33,7 +34,6 @@ public class SushiRoll : MonoBehaviour, ISwipeable
             sushiToEnable.SetActive(true);
 
         }
-        cutCounter += 1;
 
 
     }
