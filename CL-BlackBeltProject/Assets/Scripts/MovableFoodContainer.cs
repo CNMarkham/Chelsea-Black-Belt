@@ -17,7 +17,7 @@ public class MovableFoodContainer: MonoBehaviour
         //check for 4 game objects to see if they are enabled
         //if the game objects are enabled, change layer to pickup layer
         if (VisibleFoods[0].activeSelf && VisibleFoods[1].activeSelf && VisibleFoods[2].activeSelf && VisibleFoods[3].activeSelf)
-        {
+        {            
             gameObject.layer = 6;
         }
 

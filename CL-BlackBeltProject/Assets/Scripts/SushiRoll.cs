@@ -24,11 +24,11 @@ public class SushiRoll : MonoBehaviour, ISwipeable
             noriPrefab.SetActive(false);
             thinSalmonPrefab.SetActive(false);
             GetComponent<MeshRenderer>().enabled = true;
-        cutCounter += 1;
+            cutCounter += 1;
             }
         }
 
-        if (cutCounter == 1)
+        else if (cutCounter == 1)
         {
             gameObject.SetActive(false);
             sushiToEnable.SetActive(true);

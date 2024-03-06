@@ -22,6 +22,7 @@ public class DoneTrigger : MonoBehaviour
         if (other.tag == "Plate")
         {
             SceneManager.LoadScene(0);
+            GameTime.levelCounter++;
         }
     }
 }
