@@ -10,7 +10,7 @@ public class PlayerHand : MonoBehaviour
     public WoodenBoardReciever woodenBoardReciever;
     public GameObject cutSalmonPrefab;
     public GameObject salmonPrefab;
-    public float requiredDragDistance = -10f;
+    public float requiredDragDistance = -5f;
 
     private LayerMask choppableLayer;
     private LayerMask pickupLayer;

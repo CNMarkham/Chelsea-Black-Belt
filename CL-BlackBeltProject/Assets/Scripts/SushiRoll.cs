@@ -9,6 +9,7 @@ public class SushiRoll : MonoBehaviour, ISwipeable
     public GameObject thinSalmonPrefab;
     private int cutCounter;
     public GameObject sushiToEnable;
+    public AudioSource rollingSound;
 
     public void GetSwiped()
     {
@@ -32,7 +33,7 @@ public class SushiRoll : MonoBehaviour, ISwipeable
         {
             gameObject.SetActive(false);
             sushiToEnable.SetActive(true);
-
+            rollingSound.Play();
         }
 
 
