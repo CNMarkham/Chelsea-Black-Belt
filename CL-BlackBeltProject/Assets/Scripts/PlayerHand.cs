@@ -10,7 +10,7 @@ public class PlayerHand : MonoBehaviour
     public WoodenBoardReciever woodenBoardReciever;
     public GameObject cutSalmonPrefab;
     public GameObject salmonPrefab;
-    public float requiredDragDistance = -5f;
+    public float requiredDragDistance = -1f;
 
     private LayerMask choppableLayer;
     private LayerMask pickupLayer;
@@ -74,7 +74,7 @@ public class PlayerHand : MonoBehaviour
         if (swipedDown)
         {
             print("swiped");
-            if (Physics.BoxCast(cam.position, new Vector3(1f, 1f, 0.05f), cam.forward, out RaycastHit hitInfo, cam.rotation, 75f, choppableLayer, QueryTriggerInteraction.Collide))
+            if (Physics.BoxCast(cam.position, new Vector3(10f, 10f, 0.05f), cam.forward, out RaycastHit hitInfo, cam.rotation, 75f, choppableLayer, QueryTriggerInteraction.Collide))
             {
                 print("swiped 2");
                 hitInfo.transform.GetComponent<ISwipeable>().GetSwiped();
@@ -89,7 +89,7 @@ public class PlayerHand : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             recentMotion += Input.GetAxisRaw("Mouse Y");
-
+            
             if (recentMotion < requiredDragDistance && canSwipeDown)
             {
                 recentMotion = 0;
