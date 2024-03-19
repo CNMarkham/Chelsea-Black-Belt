@@ -19,7 +19,7 @@ public class DoneTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Plate")
+        if (other.tag == "Plate")// and if it hasn't collided yet
         {
             SceneManager.LoadScene(0);
             GameTime.levelCounter++;
