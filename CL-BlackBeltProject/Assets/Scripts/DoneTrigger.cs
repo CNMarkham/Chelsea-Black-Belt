@@ -5,24 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class DoneTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    private bool alreadyCollidedOnce;
+    
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Plate")// and if it hasn't collided yet
+
+        if (other.tag == "Plate" && alreadyCollidedOnce == false)// and if it hasn't collided yet
         {
-            SceneManager.LoadScene(0);
+            if (GameTime.levelCounter == 4)
+            {
+                SceneManager.LoadScene(2);
+            }
+            else
+                SceneManager.LoadScene(0);
             GameTime.levelCounter++;
-        }
+            alreadyCollidedOnce = true;
+        }  
     }
 }

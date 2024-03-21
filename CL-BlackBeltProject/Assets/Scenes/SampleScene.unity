@@ -792,8 +792,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.7707397, y: 1, z: 1}
-  m_Center: {x: 0.8307013, y: 0, z: 3.4702446e-10}
+  m_Size: {x: 36.022057, y: 1, z: 1}
+  m_Center: {x: 17.956364, y: 0, z: 0.0000000075012485}
 --- !u!23 &188509132
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1815,8 +1815,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.038017, y: 1, z: 1}
-  m_Center: {x: 1.5190084, y: 0, z: 6.34564e-10}
+  m_Size: {x: 40.271744, y: 1, z: 1}
+  m_Center: {x: -16.597847, y: 0, z: -0.00000000693373}
 --- !u!23 &516706613
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15552,8 +15552,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.7766619, y: 1, z: 1}
-  m_Center: {x: 0.88833064, y: 0, z: 0}
+  m_Size: {x: 49.35863, y: 1, z: 1}
+  m_Center: {x: -21.812162, y: 0, z: 0}
 --- !u!23 &1455898089
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15632,7 +15632,7 @@ MonoBehaviour:
   woodenBoardReciever: {fileID: 69346653}
   cutSalmonPrefab: {fileID: 1025700334}
   salmonPrefab: {fileID: 1199558661}
-  requiredDragDistance: -1
+  requiredDragDistance: -5
 --- !u!82 &1468912001
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18577,8 +18577,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 25.792889, y: 1, z: 1}
+  m_Center: {x: 13.396449, y: 0, z: 0}
 --- !u!23 &1994521242
 MeshRenderer:
   m_ObjectHideFlags: 0

@@ -12,22 +12,22 @@ public class GameTime : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (levelCounter == 2)
+        if (levelCounter == 1)
         {
             totalGameTime = 60;
         }
 
-        else if (levelCounter == 4)
+        else if (levelCounter == 2)
         {
             totalGameTime = 50;
         }
 
-        else if (levelCounter == 6)
+        else if (levelCounter == 3)
         {
             totalGameTime = 45;
         }
 
-        else if (levelCounter > 6)
+        else if (levelCounter == 4)
         {
             totalGameTime = 30;
         }
