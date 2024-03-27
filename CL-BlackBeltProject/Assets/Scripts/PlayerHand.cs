@@ -15,6 +15,7 @@ public class PlayerHand : MonoBehaviour
     private LayerMask choppableLayer;
     private LayerMask pickupLayer;
     private LayerMask riceLayer;
+    private LayerMask defaultLayer;
     private Rigidbody heldPickup;
     private float heldDistance;
     private float recentMotion;
@@ -28,6 +29,7 @@ public class PlayerHand : MonoBehaviour
         choppableLayer = LayerMask.GetMask("Choppable");
         pickupLayer = LayerMask.GetMask("Pickup");
         riceLayer = LayerMask.GetMask("Rice");
+        defaultLayer = LayerMask.GetMask("Default");
 
     }
 
@@ -66,7 +68,19 @@ public class PlayerHand : MonoBehaviour
         //heldpickup items will apear infront of the camera
         if (heldPickup != null)
         {
-            heldPickup.transform.position = cam.position + cam.forward * heldDistance;
+            if (Physics.Raycast(cam.position, cam.forward, out RaycastHit hit, 1, defaultLayer))
+            {
+               if (hit.distance < heldDistance)
+                {
+                    heldDistance = hit.distance;
+                }
+
+               if (hit.distance < 0.35f)
+                {
+                    heldDistance = 0.35f;
+                }
+            }
+                heldPickup.transform.position = cam.position + cam.forward * heldDistance;
         }
 
          swipedDown = CheckSwipeDown();

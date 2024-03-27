@@ -20060,6 +20060,7 @@ GameObject:
   - component: {fileID: 814922254180194495}
   - component: {fileID: 498799235835461756}
   - component: {fileID: 4561880771725791698}
+  - component: {fileID: 4561880771725791699}
   m_Layer: 0
   m_Name: Outdoor_Table
   m_TagString: Untagged
@@ -20154,6 +20155,7 @@ GameObject:
   - component: {fileID: 7927711148540615207}
   - component: {fileID: 1210298389883615404}
   - component: {fileID: 5360273405813058756}
+  - component: {fileID: 7927711148540615208}
   m_Layer: 0
   m_Name: Fridge_SBS_DoorL
   m_TagString: Untagged
@@ -20401,6 +20403,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4561880771725791699
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143309953701931093}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9054217, y: 0.08339176, z: 1.0886295}
+  m_Center: {x: 8.633235e-17, y: 0.37395522, z: 0.011576213}
 --- !u!1001 &4779044422175116289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20915,6 +20938,7 @@ GameObject:
   - component: {fileID: 7515683319940483771}
   - component: {fileID: 5740371405026983537}
   - component: {fileID: 7515683319940483772}
+  - component: {fileID: 7515683319940483773}
   m_Layer: 0
   m_Name: Fridge_SBS
   m_TagString: Untagged
@@ -21104,6 +21128,7 @@ GameObject:
   - component: {fileID: 6464445303326196551}
   - component: {fileID: 2264161955830627432}
   - component: {fileID: 6792930208346761074}
+  - component: {fileID: 6838641303134454947}
   m_Layer: 0
   m_Name: Fridge_SBS_DoorRUpper
   m_TagString: Untagged
@@ -21111,6 +21136,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
+--- !u!65 &6838641303134454947
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6838641303134454946}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.50703824, y: 1.0649233, z: 0.08195152}
+  m_Center: {x: 0.25351936, y: 1.2027888, z: 0.05282882}
 --- !u!4 &6909306594734802206
 Transform:
   m_ObjectHideFlags: 0
@@ -21145,6 +21191,7 @@ GameObject:
   - component: {fileID: 2845328188151744632}
   - component: {fileID: 2229587329170752966}
   - component: {fileID: 7596127365682402561}
+  - component: {fileID: 7596127365682402562}
   m_Layer: 0
   m_Name: Fridge_SBS_DoorR
   m_TagString: Untagged
@@ -21214,6 +21261,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.9007017, y: 1.0466859, z: 0.54383}
   m_Center: {x: -0.05087163, y: -0.25799105, z: -0.122691564}
+--- !u!65 &7515683319940483773
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6100434732093202340}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.06093577, y: 1.7308444, z: 0.54383}
+  m_Center: {x: 0.36901236, y: 0.084088184, z: -0.122691564}
 --- !u!23 &7596127365682402561
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21256,6 +21324,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7596127365682402562
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7067773725433555208}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5070383, y: 1.7352505, z: 0.056700137}
+  m_Center: {x: 0.2535194, y: 0.86762524, z: 0.028349994}
 --- !u!4 &7927711148540615207
 Transform:
   m_ObjectHideFlags: 0
@@ -21271,6 +21360,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6909306594734802206}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7927711148540615208
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626678312969030058}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.39366326, y: 1.7352507, z: 0.10672992}
+  m_Center: {x: -0.19683166, y: 0.86762536, z: 0.05336496}
 --- !u!1001 &8218617671872665926
 PrefabInstance:
   m_ObjectHideFlags: 0
