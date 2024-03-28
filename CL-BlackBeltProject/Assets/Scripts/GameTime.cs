@@ -29,7 +29,7 @@ public class GameTime : MonoBehaviour
 
         else if (levelCounter == 4)
         {
-            totalGameTime = 30;
+            totalGameTime = 35;
         }
     }
 

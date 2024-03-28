@@ -39,7 +39,7 @@ public class PlayerHand : MonoBehaviour
         {
             //check if there is any items to pickup
             //if there is an item, pickup the item
-            if (Physics.Raycast(cam.position, cam.forward, out RaycastHit hit, 1, pickupLayer))
+            if (Physics.Raycast(cam.position, cam.forward, out RaycastHit hit, 1, pickupLayer, QueryTriggerInteraction.Ignore))
             {
                 //when we pick up something, we don't want it to fall or anything, so make it kinematic
                 hit.rigidbody.isKinematic = true;
