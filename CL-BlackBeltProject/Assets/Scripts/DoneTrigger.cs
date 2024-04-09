@@ -7,6 +7,7 @@ public class DoneTrigger : MonoBehaviour
 {
     private bool alreadyCollidedOnce;
     public GameObject popUpMenu;
+    public Movement movement;
     
     private void OnTriggerEnter(Collider other)
     {
@@ -23,6 +24,7 @@ public class DoneTrigger : MonoBehaviour
                 popUpMenu.SetActive(true);
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
+                movement.enabled = false;
             }
             else
             {
