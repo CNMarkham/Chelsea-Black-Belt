@@ -88,7 +88,7 @@ public class PlayerHand : MonoBehaviour
         if (swipedDown)
         {
             print("swiped");
-            if (Physics.BoxCast(cam.position, new Vector3(10f, 10f, 0.05f), cam.forward, out RaycastHit hitInfo, cam.rotation, 75f, choppableLayer, QueryTriggerInteraction.Collide))
+            if (Physics.BoxCast(cam.position, new Vector3(0.5f, 10f, 0.05f), cam.forward, out RaycastHit hitInfo, cam.rotation, 75f, choppableLayer, QueryTriggerInteraction.Collide))
             {
                 print(hitInfo.transform.name);
                 hitInfo.transform.GetComponent<ISwipeable>().GetSwiped();

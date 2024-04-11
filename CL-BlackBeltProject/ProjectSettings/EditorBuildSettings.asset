@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: c4a0226f1efaf6b4d876c92ef4da9f7f
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: e460f50dd4df84a48b2d7fb3b26f02c1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 858936b1891d7c94fa8e2f2557b08e96, type: 2}

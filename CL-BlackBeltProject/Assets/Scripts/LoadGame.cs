@@ -21,4 +21,14 @@ public class LoadGame : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void LoadCreditScene()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene(1);
+    }
 }
