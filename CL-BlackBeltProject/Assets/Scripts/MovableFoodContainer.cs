@@ -5,6 +5,7 @@ using UnityEngine;
 public class MovableFoodContainer: MonoBehaviour
 {
     public GameObject[] VisibleFoods;
+    public GameObject confetti;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class MovableFoodContainer: MonoBehaviour
         if (VisibleFoods[0].activeSelf && VisibleFoods[1].activeSelf && VisibleFoods[2].activeSelf && VisibleFoods[3].activeSelf)
         {            
             gameObject.layer = 6;
+            confetti.SetActive(true);
         }
 
     }
