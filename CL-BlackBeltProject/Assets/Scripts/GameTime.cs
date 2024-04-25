@@ -47,7 +47,9 @@ public class GameTime : MonoBehaviour
 
         if (totalGameTime <= 0)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(4);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 }

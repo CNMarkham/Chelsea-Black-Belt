@@ -16,12 +16,14 @@ public class DoneTrigger : MonoBehaviour
         if (other.tag == "Plate" && alreadyCollidedOnce == false)// and if it hasn't collided yet
         {
             confetti.SetActive(true);
-            if (GameTime.levelCounter == 4)
+            if (GameTime.levelCounter >= 4)
             {
                 SceneManager.LoadScene(2);
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }
 
-            if (GameTime.levelCounter == 0)
+            else if (GameTime.levelCounter == 0)
             {
                 popUpMenu.SetActive(true);
                 Cursor.lockState = CursorLockMode.None;
@@ -34,8 +36,6 @@ public class DoneTrigger : MonoBehaviour
                 alreadyCollidedOnce = true;
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }     
-            
-
         }  
     }
 }
