@@ -2449,6 +2449,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2099758670}
   m_SourcePrefab: {fileID: 100100000, guid: 6f670fe98c3e86141a0d47dc985ccc74, type: 3}
+--- !u!1 &529385231 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2556962896560291593, guid: 5c49f07c9c7004a439979a42caaf716b, type: 3}
+  m_PrefabInstance: {fileID: 1735543680}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &531184022 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6431023949758316596, guid: cd44af195fe2e02459c0ea4f9a9fc854, type: 3}
@@ -9444,8 +9449,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 1392659907}
     m_Modifications:
     - target: {fileID: 4399284461838220486, guid: cd44af195fe2e02459c0ea4f9a9fc854, type: 3}
+      propertyPath: m_Size.y
+      value: 0.952151
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399284461838220486, guid: cd44af195fe2e02459c0ea4f9a9fc854, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399284461838220486, guid: cd44af195fe2e02459c0ea4f9a9fc854, type: 3}
+      propertyPath: m_Center.x
+      value: -0.10032606
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399284461838220486, guid: cd44af195fe2e02459c0ea4f9a9fc854, type: 3}
+      propertyPath: m_Center.y
+      value: -0.029321212
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399284461838220486, guid: cd44af195fe2e02459c0ea4f9a9fc854, type: 3}
+      propertyPath: m_Center.z
+      value: -0.6095201
       objectReference: {fileID: 0}
     - target: {fileID: 5941451431519165070, guid: cd44af195fe2e02459c0ea4f9a9fc854, type: 3}
       propertyPath: m_Name
@@ -13284,7 +13305,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2556962896560291593, guid: 5c49f07c9c7004a439979a42caaf716b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1779779458}
   m_SourcePrefab: {fileID: 100100000, guid: 5c49f07c9c7004a439979a42caaf716b, type: 3}
 --- !u!1 &1760889545 stripped
 GameObject:
@@ -13405,6 +13429,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2898058223865308595, guid: 5c49f07c9c7004a439979a42caaf716b, type: 3}
   m_PrefabInstance: {fileID: 1735543680}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1779779458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529385231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8092977cba234bb4cbe19806fd86f0f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors:
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 1, g: 0, b: 1, a: 0}
+  - {r: 0, g: 0, b: 1, a: 0}
+  - {r: 0, g: 1, b: 1, a: 0}
+  - {r: 0, g: 1, b: 0, a: 0}
+  - {r: 1, g: 1, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
+  speed: 10
 --- !u!1001 &1785907805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16893,6 +16938,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1008986942}
     m_Modifications:
+    - target: {fileID: 2820919816378949100, guid: 366fe35c99fb7304183269707831f5f8, type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820919816378949100, guid: 366fe35c99fb7304183269707831f5f8, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820919816378949100, guid: 366fe35c99fb7304183269707831f5f8, type: 3}
+      propertyPath: CollisionModule.radiusScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820919816378949100, guid: 366fe35c99fb7304183269707831f5f8, type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820919816378949100, guid: 366fe35c99fb7304183269707831f5f8, type: 3}
+      propertyPath: CollisionModule.m_Dampen.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820919816378949100, guid: 366fe35c99fb7304183269707831f5f8, type: 3}
+      propertyPath: CollisionModule.maxCollisionShapes
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820919816378949100, guid: 366fe35c99fb7304183269707831f5f8, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820919816378949100, guid: 366fe35c99fb7304183269707831f5f8, type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4312346531638694883, guid: 366fe35c99fb7304183269707831f5f8, type: 3}
       propertyPath: m_Name
       value: Confetti
