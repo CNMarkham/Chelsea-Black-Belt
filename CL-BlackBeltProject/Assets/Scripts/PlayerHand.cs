@@ -55,6 +55,14 @@ public class PlayerHand : MonoBehaviour
                     //get the distance between our camera and the held object so we know exactly where to hold it later
                     heldDistance = (hit.transform.position - cam.position).magnitude;
                     hit.collider.enabled = false;
+                    if (hit.collider.gameObject.GetComponent<TutorialSalmon>() != null)
+                    {
+                        if (hit.collider.gameObject.GetComponent<TutorialSalmon>().played == false)
+                        {
+                            hit.collider.gameObject.GetComponent<TutorialSalmon>().cutscene.Play();
+                            hit.collider.gameObject.GetComponent<TutorialSalmon>().played = true;
+                        }
+                    }
                 }
 
             }        
