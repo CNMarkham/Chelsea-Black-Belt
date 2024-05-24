@@ -20,14 +20,14 @@ public class TutorialMenu : MonoBehaviour
     public void RestartTutorial()
     {
         GameTime.levelCounter = 0;       
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);        
+        SceneManager.LoadScene(0);        
     //make level counter to 0 and the no timer game will restart
     }
 
     public void ChangeLevel()
     {
         GameTime.levelCounter = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(0);
     //the restart pop up will disappear
     //make level counter 1 and next level will be played 
     }

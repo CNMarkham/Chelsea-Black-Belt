@@ -9,6 +9,7 @@ public class GameTime : MonoBehaviour
     public static int levelCounter = 0;
     public Text GameCountdown;
     public float totalGameTime;
+    public GameObject gameCursor;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +51,7 @@ public class GameTime : MonoBehaviour
             SceneManager.LoadScene(4);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            gameCursor.SetActive(false);
         }
     }
 }

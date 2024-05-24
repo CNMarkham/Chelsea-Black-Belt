@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RanOutOfTime(Lose).unity
     guid: 5274959c020637a478cbaa3d384a4b32
+  - enabled: 1
+    path: Assets/Scenes/Cutscene.unity
+    guid: dff17542ae27d5c48bcab14756a3fd30
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 858936b1891d7c94fa8e2f2557b08e96, type: 2}

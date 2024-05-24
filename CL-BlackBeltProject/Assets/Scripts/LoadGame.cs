@@ -31,4 +31,9 @@ public class LoadGame : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void LoadCutscene()
+    {
+        SceneManager.LoadScene(5);
+    }
 }
