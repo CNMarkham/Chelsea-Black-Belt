@@ -5,6 +5,7 @@ using UnityEngine.Playables;
 public class TutorialSalmon : MonoBehaviour
 {
 
-    public PlayableDirector cutscene;
+    public PlayableDirector cutscene1;
+    public PlayableDirector cutscene2;
     public bool played;
 }

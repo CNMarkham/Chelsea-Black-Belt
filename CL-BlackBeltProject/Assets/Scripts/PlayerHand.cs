@@ -59,8 +59,8 @@ public class PlayerHand : MonoBehaviour
                     {
                         if (hit.collider.gameObject.GetComponent<TutorialSalmon>().played == false)
                         {
-                            hit.collider.gameObject.GetComponent<TutorialSalmon>().cutscene.Play();
-                            hit.collider.gameObject.GetComponent<TutorialSalmon>().played = true;
+                            hit.collider.gameObject.GetComponent<TutorialSalmon>().cutscene1.Play();
+                            //hit.collider.gameObject.GetComponent<TutorialSalmon>().played = true;
                         }
                     }
                 }
@@ -71,8 +71,15 @@ public class PlayerHand : MonoBehaviour
         {
             heldPickup.isKinematic = false; 
             heldPickup.GetComponent<Collider>().enabled = true;
+            if (heldPickup.gameObject.GetComponent<TutorialSalmon>() != null)
+            {
+                if (heldPickup.gameObject.GetComponent<TutorialSalmon>().played == false)
+                {
+                    heldPickup.gameObject.GetComponent<TutorialSalmon>().cutscene2.Play();
+                    heldPickup.gameObject.GetComponent<TutorialSalmon>().played = true;
+                }
+            }
             heldPickup = null;
-
         }
 
         //heldpickup items will apear infront of the camera
