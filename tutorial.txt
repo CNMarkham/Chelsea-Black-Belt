@@ -1,0 +1,11 @@
+1. when picking up the salmon
+2. when dropping the salmon
+	on trigger enter, enable object
+3. after dropping all 4 salmon pieces in the box
+	enable object
+4. after placing the box
+	on trigger enter, enable object
+5. after dropping all ingredients on sushi mat
+	on trigger enter, enable object
+6. when sushi roll is cut
+	enable object
