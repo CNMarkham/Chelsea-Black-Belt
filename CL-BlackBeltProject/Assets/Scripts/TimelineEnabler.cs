@@ -5,21 +5,23 @@ using UnityEngine.Playables;
 
 public class TimelineEnabler : MonoBehaviour
 {
-        public PlayableDirector cutscene; 
-
+    public PlayableDirector cutscene;
+    public GameObject[] otherObjects;
+    private int objCount = 0;
     private void OnEnable()
-    {
-        cutscene.Play();
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    {       
+        //if all the salmon pieces are active then play cutscene
+        foreach (GameObject go in otherObjects)
+        {
+            if (go.activeSelf)
+            {
+                objCount++;
+            }
+        }
+        if (objCount == otherObjects.Length)
+        {
+            cutscene.Play();
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

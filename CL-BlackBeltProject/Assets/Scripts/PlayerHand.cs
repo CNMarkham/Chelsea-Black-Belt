@@ -71,14 +71,6 @@ public class PlayerHand : MonoBehaviour
         {
             heldPickup.isKinematic = false; 
             heldPickup.GetComponent<Collider>().enabled = true;
-            if (heldPickup.gameObject.GetComponent<TutorialSalmon>() != null)
-            {
-                if (heldPickup.gameObject.GetComponent<TutorialSalmon>().played == false)
-                {
-                    heldPickup.gameObject.GetComponent<TutorialSalmon>().cutscene2.Play();
-                    heldPickup.gameObject.GetComponent<TutorialSalmon>().played = true;
-                }
-            }
             heldPickup = null;
         }
 
