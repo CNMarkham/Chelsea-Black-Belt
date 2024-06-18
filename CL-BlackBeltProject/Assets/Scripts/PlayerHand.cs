@@ -37,7 +37,7 @@ public class PlayerHand : MonoBehaviour
         {
             //check if there is any items to pickup
             //if there is an item, pickup the item
-            if (Physics.SphereCast(cam.position, 0.1f, cam.forward, out RaycastHit hit, 1, pickupLayer, QueryTriggerInteraction.Ignore))
+            if (Physics.SphereCast(cam.position, 0.01f, cam.forward, out RaycastHit hit, 1, pickupLayer, QueryTriggerInteraction.Ignore))
             {
                 if (hit.collider.gameObject.layer == 8)
                 {
