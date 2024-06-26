@@ -2813,7 +2813,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Place the Sushi rolls onto the Plate
+  m_text: Place the Sushi Rolls onto the Plate
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb8ba85ab83a9bc4a9680393010cb01f, type: 2}
   m_sharedMaterial: {fileID: 2516184278306968814, guid: eb8ba85ab83a9bc4a9680393010cb01f, type: 2}
@@ -4566,7 +4566,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: To cut objects, hold left click while dragging down on the object
+  m_text: To cut the Salmon, hold left click while dragging down on the Salmon
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb8ba85ab83a9bc4a9680393010cb01f, type: 2}
   m_sharedMaterial: {fileID: 2516184278306968814, guid: eb8ba85ab83a9bc4a9680393010cb01f, type: 2}
@@ -10760,7 +10760,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Right click to drop the salmon onto the Cutting Board
+  m_text: Right click to drop the Salmon onto the Cutting Board
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb8ba85ab83a9bc4a9680393010cb01f, type: 2}
   m_sharedMaterial: {fileID: 2516184278306968814, guid: eb8ba85ab83a9bc4a9680393010cb01f, type: 2}
@@ -12631,7 +12631,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1362137477}
-  - component: {fileID: 1362137478}
   m_Layer: 5
   m_Name: Cursor
   m_TagString: Untagged
@@ -12660,18 +12659,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1362137478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362137476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8db339135c5de3344b1666d4c8095ff5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1367120907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16672,6 +16659,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce672edbc975293478c008cec7ad0e7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  popUpMenu: {fileID: 1841171279}
+  gameCursor: {fileID: 1362137476}
+  gameTimer: {fileID: 375214335}
 --- !u!1 &1863658413
 GameObject:
   m_ObjectHideFlags: 0
@@ -17007,7 +16997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -17301,7 +17291,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bring the salmon to the Cutting Board
+  m_text: Bring the Salmon to the Cutting Board
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb8ba85ab83a9bc4a9680393010cb01f, type: 2}
   m_sharedMaterial: {fileID: 2516184278306968814, guid: eb8ba85ab83a9bc4a9680393010cb01f, type: 2}
