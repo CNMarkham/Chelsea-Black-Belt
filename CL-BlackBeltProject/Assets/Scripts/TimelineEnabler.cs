@@ -9,19 +9,22 @@ public class TimelineEnabler : MonoBehaviour
     public GameObject[] otherObjects;
     private int objCount = 0;
     private void OnEnable()
-    {       
+    {
         //if all the salmon pieces are active then play cutscene
-        foreach (GameObject go in otherObjects)
+
+        if (GameTime.levelCounter == 0)
         {
-            if (go.activeSelf)
+            foreach (GameObject go in otherObjects)
             {
-                objCount++;
+                if (go.activeSelf)
+                {
+                    objCount++;
+                }
+            }        
+            if (objCount == otherObjects.Length)
+            {
+                cutscene.Play();
             }
         }
-        if (objCount == otherObjects.Length)
-        {
-            cutscene.Play();
-        }
-
     }
 }

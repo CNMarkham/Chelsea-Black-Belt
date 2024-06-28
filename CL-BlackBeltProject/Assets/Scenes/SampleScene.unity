@@ -11888,6 +11888,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1247485043}
   - component: {fileID: 1247485042}
+  - component: {fileID: 1247485044}
   m_Layer: 0
   m_Name: Timeline
   m_TagString: Untagged
@@ -11905,7 +11906,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 2c6dc0f8d10a7c442b0296983bd728c0, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -11937,6 +11938,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1247485044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247485041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 284a803ba4001e34db302cbc87d8fe0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeline: {fileID: 1247485042}
 --- !u!1 &1273563583
 GameObject:
   m_ObjectHideFlags: 0
@@ -16662,6 +16676,7 @@ MonoBehaviour:
   popUpMenu: {fileID: 1841171279}
   gameCursor: {fileID: 1362137476}
   gameTimer: {fileID: 375214335}
+  movement: {fileID: 963194229}
 --- !u!1 &1863658413
 GameObject:
   m_ObjectHideFlags: 0
@@ -16961,7 +16976,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1882949976
 Animator:
   serializedVersion: 5
