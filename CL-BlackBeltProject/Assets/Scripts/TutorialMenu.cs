@@ -13,7 +13,13 @@ public class TutorialMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (GameTime.levelCounter >= 1)
+        {
+            //See the cursor
+            gameCursor.SetActive(true);
+            //make the timer appear
+            gameTimer.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -30,20 +36,15 @@ public class TutorialMenu : MonoBehaviour
     }
 
     public void ChangeLevel()
-    {
-        GameTime.levelCounter = 1;
-        //Turn Off Pop up
-        popUpMenu.SetActive(false);
-        //Unlock Cursors
-        Cursor.lockState = CursorLockMode.None;
-        //See the cursor
-        gameCursor.SetActive(true);
-        //Make timer appear
-        gameTimer.SetActive(true);
-        movement.enabled = true;
-        SceneManager.LoadScene(0);
-        //the restart pop up will disappear
+    {        
         //make level counter 1 and next level will be played 
+        GameTime.levelCounter = 1;
+        //the restart pop up will disappear
+        popUpMenu.SetActive(false);
+        //Unlock Cursor
+        Cursor.lockState = CursorLockMode.None;
+        //turn off movement
+        movement.enabled = true;
+        SceneManager.LoadScene(0);       
     }
-
 }

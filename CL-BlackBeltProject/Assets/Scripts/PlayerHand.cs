@@ -22,7 +22,6 @@ public class PlayerHand : MonoBehaviour
     private bool swipedDown;
     private bool canSwipeDown = true;
 
-
     void Start()
     {
         choppableLayer = LayerMask.GetMask("Choppable");
@@ -55,15 +54,18 @@ public class PlayerHand : MonoBehaviour
                     //get the distance between our camera and the held object so we know exactly where to hold it later
                     heldDistance = (hit.transform.position - cam.position).magnitude;
                     hit.collider.enabled = false;
-                    if (hit.collider.gameObject.GetComponent<TutorialSalmon>() != null)
+                    if (GameTime.levelCounter == 0)
                     {
-                        if (hit.collider.gameObject.GetComponent<TutorialSalmon>().played == false)
+                        if (hit.collider.gameObject.GetComponent<TutorialSalmon>() != null)
                         {
-                            hit.collider.gameObject.GetComponent<TutorialSalmon>().cutscene1.Play();
-                            //hit.collider.gameObject.GetComponent<TutorialSalmon>().played = true;
+                            if (hit.collider.gameObject.GetComponent<TutorialSalmon>().played == false)
+                            {
+                                hit.collider.gameObject.GetComponent<TutorialSalmon>().cutscene1.Play();
+                                //hit.collider.gameObject.GetComponent<TutorialSalmon>().played = true;
+                            }
                         }
                     }
-                }
+                }    
 
             }        
         }

@@ -9,6 +9,7 @@ public class DoneTrigger : MonoBehaviour
     public GameObject popUpMenu;
     public Movement movement;
     public GameObject confetti;
+    public GameObject gameCursor;
     
     private void OnTriggerEnter(Collider other)
     {
@@ -29,6 +30,7 @@ public class DoneTrigger : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
                 movement.enabled = false;
+                gameCursor.SetActive(false);
             }
             else
             {
