@@ -325,6 +325,7 @@ GameObject:
   - component: {fileID: 266202611}
   - component: {fileID: 266202610}
   - component: {fileID: 266202609}
+  - component: {fileID: 266202612}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -446,6 +447,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266202607}
   m_CullTransparentMesh: 1
+--- !u!114 &266202612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266202607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 5.2, y: -0.07}
+  m_UseGraphicAlpha: 1
 --- !u!1 &567218491
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,8 +787,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -360.90637, y: 102.7}
-  m_SizeDelta: {x: 200, y: 250.28}
+  m_AnchoredPosition: {x: -360.90637, y: 131.19922}
+  m_SizeDelta: {x: 200, y: 193.2816}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &780106482
 MonoBehaviour:
@@ -798,16 +814,13 @@ MonoBehaviour:
 
     Candy
 
-    Ricky
-
-    Benny
-
-    James
+    Dhevan
 
     Ryan
 
-    Juan
+    Benny
 
+    Ricky
 
 '
   m_isRightToLeft: 0
@@ -1584,7 +1597,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -356, y: -142}
+  m_AnchoredPosition: {x: -360.91, y: -121.79}
   m_SizeDelta: {x: 183.39, y: 243.5708}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1566890198
@@ -1616,8 +1629,6 @@ MonoBehaviour:
     Candy
 
     Michael
-
-    Dhevan
 
     Laurence'
   m_isRightToLeft: 0
@@ -1864,7 +1875,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -361.7, y: -11}
+  m_AnchoredPosition: {x: -360.91, y: 9.5584}
   m_SizeDelta: {x: 211.7505, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1974171236
