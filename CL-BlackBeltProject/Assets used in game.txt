@@ -1,9 +1,28 @@
-Assets used in game
+Assets
 
-Korea Craft & Design Foundation
-yaro.team
-alstra infinite
-Geniuscrate Games
-reach the enD
-Mavi3D
-NevLext
+Graphical assets: Unity Asset Store
+
+decoration: Korea Craft & Design Foundation
+
+sushi food pack: yaro.team
+
+kitchen appliances: Alstra Infinite and Geniuscrate Games
+
+cutting board: reach the enD
+
+carpet texture: Mavi3D
+
+brick textures: NevLext
+
+lights: Albert Gregl - Worcco Arts
+
+
+
+Audio assets
+
+background music: Fun in Kyoto by Steve Oxen on Fesliyanstudios.com
+
+placing sound and slicing sound: Pixabay.com
+
+
+confetti sound: Nhaudio32 on Voicy.network
