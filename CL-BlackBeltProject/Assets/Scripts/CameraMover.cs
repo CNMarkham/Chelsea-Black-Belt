@@ -8,6 +8,7 @@ public class CameraMover : MonoBehaviour
     public MoveCamera moveCamera;
     private void OnEnable()
     {
+        //setting the camera position to targetPosition
         moveCamera.cameraPosition = targetPosition;
     }
 }

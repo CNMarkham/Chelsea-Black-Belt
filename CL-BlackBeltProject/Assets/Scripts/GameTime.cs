@@ -44,7 +44,8 @@ public class GameTime : MonoBehaviour
         } 
 
         totalGameTime -= Time.deltaTime;        
-        GameCountdown.text = Mathf.Round(totalGameTime).ToString();       
+        //sets GameCountdown's text to rounded number of totalGameTime
+        GameCountdown.text = Mathf.Round(totalGameTime).ToString();      
 
         if (totalGameTime <= 0)
         {

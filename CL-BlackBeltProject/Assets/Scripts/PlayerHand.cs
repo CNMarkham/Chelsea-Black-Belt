@@ -6,7 +6,6 @@ public class PlayerHand : MonoBehaviour
 {
     public Transform cam;
     public GameObject ricePrefab;
-    public IngredientController ingredientController;
     public WoodenBoardReciever woodenBoardReciever;
     public GameObject cutSalmonPrefab;
     public GameObject salmonPrefab;

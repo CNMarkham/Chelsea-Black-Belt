@@ -9,12 +9,14 @@ public class CreditsMover : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //makes "DelayedSceneLoader" happen after 43 seconds
         Invoke("DelayedSceneLoader", 43f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        //moves the credits' text up
         transform.Translate(Vector3.up * speed * Time.deltaTime);
     }
 
