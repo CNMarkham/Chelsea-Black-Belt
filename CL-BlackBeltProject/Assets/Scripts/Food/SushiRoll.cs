@@ -31,7 +31,5 @@ public class SushiRoll : MonoBehaviour, ISwipeable
             sushiToEnable.SetActive(true);
             rollingSound.Play();
         }
-
-
     }
 }

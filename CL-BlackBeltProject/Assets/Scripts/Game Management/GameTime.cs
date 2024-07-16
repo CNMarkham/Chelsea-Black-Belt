@@ -13,24 +13,20 @@ public class GameTime : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (levelCounter == 1)
+        switch(levelCounter)
         {
-            totalGameTime = 60;
-        }
-
-        else if (levelCounter == 2)
-        {
-            totalGameTime = 50;
-        }
-
-        else if (levelCounter == 3)
-        {
-            totalGameTime = 45;
-        }
-
-        else if (levelCounter == 4)
-        {
-            totalGameTime = 35;
+            case 1:
+                totalGameTime = 60;
+                break;
+            case 2:
+                totalGameTime = 50;
+                break;
+            case 3:
+                totalGameTime = 45;
+                break;
+            case 4:
+                totalGameTime = 35;
+                break;
         }
     }
 
@@ -48,7 +44,7 @@ public class GameTime : MonoBehaviour
         GameCountdown.text = Mathf.Round(totalGameTime).ToString();      
 
         if (totalGameTime <= 0)
-        {
+        {   //loads lose scene
             SceneManager.LoadScene(4);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;

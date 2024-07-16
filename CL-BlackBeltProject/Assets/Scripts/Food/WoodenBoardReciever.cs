@@ -9,21 +9,9 @@ public class WoodenBoardReciever : MonoBehaviour
     public GameObject[] cutSalmonPieces;
     public bool isCuttingSalmon;
     public int salmonPiecesCut;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void CutSalmon()
     {
+        //
         if (cutSalmonPieces[3].activeSelf)
         {
             return;

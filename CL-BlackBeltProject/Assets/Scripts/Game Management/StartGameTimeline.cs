@@ -14,10 +14,4 @@ public class StartGameTimeline : MonoBehaviour
             timeline.Play();
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

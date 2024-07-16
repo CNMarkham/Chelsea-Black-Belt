@@ -21,18 +21,11 @@ public class TutorialMenu : MonoBehaviour
             gameTimer.SetActive(true);
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void RestartTutorial()
-    {
+    {   
+        //make level counter to 0 and the no timer game will restart
         GameTime.levelCounter = 0;       
         SceneManager.LoadScene(0);        
-    //make level counter to 0 and the no timer game will restart
     }
 
     public void ChangeLevel()

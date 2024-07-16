@@ -30,10 +30,10 @@ public class PlayerHand : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
+        //check if there is any items to pickup
         if (Input.GetMouseButtonDown(0) && heldPickup == null)
         {
-            //check if there is any items to pickup
             //if there is an item, pickup the item
             if (Physics.SphereCast(cam.position, 0.01f, cam.forward, out RaycastHit hit, 1, pickupLayer, QueryTriggerInteraction.Ignore))
             {
@@ -68,6 +68,7 @@ public class PlayerHand : MonoBehaviour
 
             }        
         }
+        //when we hold things, we want them to stay in our hands instead of being affected by gravity
         if(Input.GetMouseButtonDown(1) && heldPickup != null)
         {
             heldPickup.isKinematic = false; 
@@ -75,9 +76,10 @@ public class PlayerHand : MonoBehaviour
             heldPickup = null;
         }
 
-        //heldpickup items will apear infront of the camera
+        //heldpickup items will appear in front of the camera
         if (heldPickup != null)
         {
+            //if it touches an object, it brings it closer to the camera
             if (Physics.SphereCast(cam.position, 0.1f, cam.forward, out RaycastHit hit, 1, defaultLayer))
             {
                if (hit.distance < heldDistance)
@@ -95,12 +97,12 @@ public class PlayerHand : MonoBehaviour
 
          swipedDown = CheckSwipeDown();
 
+        //checks if swipedDown method has happened
         if (swipedDown)
         {
-            print("swiped");
+            //checks for an object with the choppableLayer in front of the camera
             if (Physics.BoxCast(cam.position, new Vector3(0.5f, 10f, 0.05f), cam.forward, out RaycastHit hitInfo, cam.rotation, 75f, choppableLayer, QueryTriggerInteraction.Collide))
             {
-                print(hitInfo.transform.name);
                 hitInfo.transform.GetComponent<ISwipeable>().GetSwiped();
             }
         }
@@ -113,11 +115,12 @@ public class PlayerHand : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             recentMotion += Input.GetAxisRaw("Mouse Y");
-            
+            //checks if recentMotion is less than requiredDragDistance and canSwipeDown
             if (recentMotion < requiredDragDistance && canSwipeDown)
             {
                 recentMotion = 0;
                 canSwipeDown = false;
+                //sets swipedDown(line 100) to true
                 return true;
             }
         }
@@ -126,6 +129,7 @@ public class PlayerHand : MonoBehaviour
             canSwipeDown = true;
             recentMotion = 0;
         }
+        //sets swipedDown to false
         return false;
     }
 }

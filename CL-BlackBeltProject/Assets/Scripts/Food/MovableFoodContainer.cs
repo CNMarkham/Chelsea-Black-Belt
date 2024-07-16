@@ -16,6 +16,5 @@ public class MovableFoodContainer: MonoBehaviour
             gameObject.layer = 6;
             confetti.SetActive(true);
         }
-
     }
 }

@@ -38,8 +38,9 @@ public class PlayerController : MonoBehaviour
 
     private void MovePlayer()
     {
+        //decides what direction the player moves to by the direction the player is moving and how many times the button is pressed
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
-
+        //pushing the player using moveDirection
         rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
     }
 }

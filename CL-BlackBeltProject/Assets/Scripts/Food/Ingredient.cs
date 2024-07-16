@@ -14,6 +14,5 @@ public class Ingredient: MonoBehaviour
             toEnable.SetActive(true);
             Destroy(gameObject);
         }
-
     }
 }
