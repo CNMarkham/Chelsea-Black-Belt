@@ -16,7 +16,7 @@ public class CreditsMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //moves the credits' text up
+        //moves the credits text up
         transform.Translate(Vector3.up * speed * Time.deltaTime);
     }
 

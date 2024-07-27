@@ -82,14 +82,16 @@ public class PlayerHand : MonoBehaviour
             //if it touches an object, it brings it closer to the camera
             if (Physics.SphereCast(cam.position, 0.1f, cam.forward, out RaycastHit hit, 1, defaultLayer))
             {
+
                if (hit.distance < heldDistance)
                 {
                     heldDistance = hit.distance;
                 }
 
+               //sets heldDistance to 0.35f so that the object being held doesn't clip into the camera
                if (hit.distance < 0.35f)
                 {
-                    heldDistance = 0.35f;
+                     heldDistance = 0.35f;
                 }
             }
                 heldPickup.transform.position = cam.position + cam.forward * heldDistance;

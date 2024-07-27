@@ -15936,7 +15936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5af9cc19f4701af4489019400ed2857c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameCountdown: {fileID: 375214338}
+  gameCountdown: {fileID: 375214338}
   totalGameTime: 60
   gameCursor: {fileID: 1362137476}
 --- !u!4 &1861107226

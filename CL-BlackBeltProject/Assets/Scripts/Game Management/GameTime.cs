@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameTime : MonoBehaviour
 {
     public static int levelCounter = 0;
-    public Text GameCountdown;
+    public Text gameCountdown;
     public float totalGameTime;
     public GameObject gameCursor;
     // Start is called before the first frame update
@@ -35,13 +35,13 @@ public class GameTime : MonoBehaviour
     {   
         if (levelCounter == 0)
         {
-            GameCountdown.text = "";
+            gameCountdown.text = "";
             return;
         } 
 
         totalGameTime -= Time.deltaTime;        
         //sets GameCountdown's text to rounded number of totalGameTime
-        GameCountdown.text = Mathf.Round(totalGameTime).ToString();      
+        gameCountdown.text = Mathf.Round(totalGameTime).ToString();      
 
         if (totalGameTime <= 0)
         {   //loads lose scene
