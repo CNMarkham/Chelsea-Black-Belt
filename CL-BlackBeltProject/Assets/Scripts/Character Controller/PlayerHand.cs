@@ -37,6 +37,7 @@ public class PlayerHand : MonoBehaviour
             //if there is an item, pickup the item
             if (Physics.SphereCast(cam.position, 0.01f, cam.forward, out RaycastHit hit, 1, pickupLayer, QueryTriggerInteraction.Ignore))
             {
+                //layer 8 is rice
                 if (hit.collider.gameObject.layer == 8)
                 {
                     heldPickup = Instantiate(ricePrefab).GetComponent<Rigidbody>();

@@ -13,6 +13,7 @@ public class MovableFoodContainer: MonoBehaviour
         //if the game objects are enabled, change layer to pickup layer
         if (VisibleFoods[0].activeSelf && VisibleFoods[1].activeSelf && VisibleFoods[2].activeSelf && VisibleFoods[3].activeSelf)
         {            
+            //layer 6 is pickup
             gameObject.layer = 6;
             confetti.SetActive(true);
         }
