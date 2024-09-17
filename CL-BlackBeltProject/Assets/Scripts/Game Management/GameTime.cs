@@ -45,7 +45,7 @@ public class GameTime : MonoBehaviour
 
         if (totalGameTime <= 0)
         {   //loads lose scene
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene("RanOutOfTime(Lose)");
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             gameCursor.SetActive(false);

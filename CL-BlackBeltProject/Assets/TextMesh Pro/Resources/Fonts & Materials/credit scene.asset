@@ -99,10 +99,10 @@ Material:
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
-    - _FaceColor: {r: 0.08770915, g: 0.15148559, b: 0.6886792, a: 1}
+    - _FaceColor: {r: 0.1768868, g: 0.46179104, b: 0.7075472, a: 1}
     - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
-    - _OutlineColor: {r: 0.02281441, g: 0.0076094554, b: 0.5377358, a: 1}
+    - _OutlineColor: {r: 0.007843142, g: 0.18569998, b: 0.5372549, a: 1}
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
@@ -168,9 +168,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: credit scene
   m_EditorClassIdentifier: 
-  hashCode: 213855013
+  hashCode: -1278805165
   material: {fileID: -2336881440205926296}
-  materialHashCode: -1930649883
+  materialHashCode: -41700717
   m_Version: 1.1.0
   m_SourceFontFileGUID: 04192810d22de0a4f9cd20c7145b2843
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 04192810d22de0a4f9cd20c7145b2843, type: 3}

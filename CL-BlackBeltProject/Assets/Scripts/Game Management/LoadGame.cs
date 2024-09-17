@@ -7,21 +7,27 @@ public class LoadGame : MonoBehaviour
 {
     public void SceneChanger()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void LoadCreditScene()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("Credits");
     }
 
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Menu");
     }
 
     public void LoadCutscene()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene("Cutscene");
+    }
+
+    public void RestartGame()
+    {
+        GameTime.levelCounter = 1;
+        SceneManager.LoadScene("SampleScene");
     }
 }

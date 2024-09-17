@@ -18,7 +18,7 @@ public class DoneTrigger : MonoBehaviour
             confetti.SetActive(true);
             if (GameTime.levelCounter >= 4)
             {
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene("Win");
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
             }

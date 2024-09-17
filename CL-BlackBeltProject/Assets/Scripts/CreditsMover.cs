@@ -10,7 +10,7 @@ public class CreditsMover : MonoBehaviour
     void Start()
     {
         //makes "DelayedSceneLoader" happen after 43 seconds
-        Invoke("DelayedSceneLoader", 43f);
+        Invoke("DelayedSceneLoader", 60f);
     }
 
     // Update is called once per frame
@@ -22,6 +22,6 @@ public class CreditsMover : MonoBehaviour
 
     void DelayedSceneLoader()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Menu");
     }
 }

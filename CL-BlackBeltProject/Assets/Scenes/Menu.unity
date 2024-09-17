@@ -8778,7 +8778,7 @@ BoxCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
-  m_ProvidesContacts: 0
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.45, y: 0.045273997, z: 0.54}
@@ -16307,15 +16307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8092977cba234bb4cbe19806fd86f0f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colors:
-  - {r: 1, g: 0, b: 0, a: 0}
-  - {r: 1, g: 0, b: 1, a: 0}
-  - {r: 0, g: 0, b: 1, a: 0}
-  - {r: 0, g: 1, b: 1, a: 0}
-  - {r: 0, g: 1, b: 0, a: 0}
-  - {r: 1, g: 1, b: 0, a: 0}
-  - {r: 1, g: 0, b: 0, a: 0}
-  speed: 10
 --- !u!1001 &1969465395
 PrefabInstance:
   m_ObjectHideFlags: 0
