@@ -9,20 +9,19 @@ public class WoodenBoardReciever : MonoBehaviour
     public GameObject[] cutSalmonPieces;
     public bool isCuttingSalmon;
     public int salmonPiecesCut;
-    public void CutSalmon()
-    {
-        //
-        if (cutSalmonPieces[3].activeSelf)
-        {
-            return;
-        }
-        cutSalmonPieces[salmonPiecesCut].SetActive(true);
-        if (salmonPiecesCut > 0)
-        {
-            cutSalmonPieces[salmonPiecesCut-1].SetActive(false);
-        }
-        salmonPiecesCut+=1;
-    }
+    //public void CutSalmon()
+    //{
+    //    if (cutSalmonPieces[3].activeSelf)
+    //    {
+    //        return;
+    //    }
+    //    cutSalmonPieces[salmonPiecesCut].SetActive(true);
+    //    if (salmonPiecesCut > 0)
+    //    {
+    //        cutSalmonPieces[salmonPiecesCut-1].SetActive(false);
+    //    }
+    //    salmonPiecesCut+=1;
+    //}
 
     public void OnTriggerEnter(Collider other)
     {

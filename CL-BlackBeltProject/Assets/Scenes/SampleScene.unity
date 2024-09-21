@@ -10084,8 +10084,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30862b2c9343c104ea1e69bc5712b76b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensX: 400
-  sensY: 400
+  sensX: 2
+  sensY: 2
   orientation: {fileID: 1158774569}
 --- !u!1001 &967031364
 PrefabInstance:
