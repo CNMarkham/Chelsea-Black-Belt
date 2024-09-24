@@ -73,7 +73,10 @@ public class PlayerHand : MonoBehaviour
         if(Input.GetMouseButtonDown(1) && heldPickup != null)
         {
             heldPickup.isKinematic = false; 
-            heldPickup.GetComponent<Collider>().enabled = true;
+            foreach (Collider c in heldPickup.GetComponents<Collider>())
+            {
+                c.enabled = true;
+            }
             heldPickup = null;
         }
 

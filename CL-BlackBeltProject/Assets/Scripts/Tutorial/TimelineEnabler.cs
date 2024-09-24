@@ -11,7 +11,6 @@ public class TimelineEnabler : MonoBehaviour
     private void OnEnable()
     {
         //if all the salmon pieces are active then play cutscene
-
         if (GameTime.levelCounter == 0)
         {
             foreach (GameObject go in otherObjects)

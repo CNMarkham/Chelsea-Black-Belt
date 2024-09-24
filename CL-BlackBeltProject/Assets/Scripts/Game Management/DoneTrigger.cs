@@ -13,7 +13,7 @@ public class DoneTrigger : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Plate" && alreadyCollidedOnce == false)// and if it hasn't collided yet
+        if (other.tag == "Plate" && alreadyCollidedOnce == false)
         {
             confetti.SetActive(true);
             if (GameTime.levelCounter >= 4)

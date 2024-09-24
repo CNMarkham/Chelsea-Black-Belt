@@ -9,7 +9,7 @@ public class CreditsMover : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //makes "DelayedSceneLoader" happen after 43 seconds
+        //makes "DelayedSceneLoader" happen after 1 minute
         Invoke("DelayedSceneLoader", 60f);
     }
 
