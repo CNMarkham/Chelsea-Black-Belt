@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class WoodenBoardReciever : MonoBehaviour
 {
+    //salmon to be cut
     public GameObject salmonPrefab;
-
+    //holds the cut salmon pieces
     public GameObject[] cutSalmonPieces;
     public bool isCuttingSalmon;
     public int salmonPiecesCut;

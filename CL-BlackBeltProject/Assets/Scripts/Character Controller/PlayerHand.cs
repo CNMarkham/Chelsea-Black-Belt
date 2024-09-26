@@ -20,13 +20,11 @@ public class PlayerHand : MonoBehaviour
 
     private bool swipedDown;
     private bool canSwipeDown = true;
-
     void Start()
     {
         choppableLayer = LayerMask.GetMask("Choppable");
         pickupLayer = LayerMask.GetMask("Pickup", "Rice");
         defaultLayer = LayerMask.GetMask("Default");
-
     }
 
     void Update()
