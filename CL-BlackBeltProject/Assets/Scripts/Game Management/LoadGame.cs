@@ -7,7 +7,7 @@ public class LoadGame : MonoBehaviour
 {
     public void SceneChanger()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("MainGame");
     }
 
     public void LoadCreditScene()
@@ -28,6 +28,6 @@ public class LoadGame : MonoBehaviour
     public void RestartGame()
     {
         GameTime.levelCounter = 1;
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("MainGame");
     }
 }

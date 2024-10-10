@@ -27,7 +27,7 @@ public class TutorialMenu : MonoBehaviour
     {   
         //make level counter to 0 and the no timer game will restart
         GameTime.levelCounter = 0;       
-        SceneManager.LoadScene("SampleScene");        
+        SceneManager.LoadScene("MainGame");        
     }
 
     public void ChangeLevel()
@@ -40,6 +40,6 @@ public class TutorialMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         //turn off movement
         movement.enabled = true;
-        SceneManager.LoadScene("SampleScene");       
+        SceneManager.LoadScene("MainGame");       
     }
 }
