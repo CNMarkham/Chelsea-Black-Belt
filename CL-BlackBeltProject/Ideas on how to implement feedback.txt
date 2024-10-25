@@ -1,0 +1,3 @@
+Ideas on how to implement feedback (making game less repetitive)
+
+-

@@ -756,7 +756,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Presenting:'
+  m_text: 'Chelsea Presents:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d9c12dd6ffca1324b90b8aa74a43d62d, type: 2}
   m_sharedMaterial: {fileID: 2516184278306968814, guid: d9c12dd6ffca1324b90b8aa74a43d62d, type: 2}

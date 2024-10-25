@@ -19853,6 +19853,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4779044421769254913, guid: 7007601195b674242bd656ae7ca8186c, type: 3}
+      propertyPath: moveSpeed
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 4779044421769256954, guid: 7007601195b674242bd656ae7ca8186c, type: 3}
       propertyPath: m_Name
       value: Player
@@ -19864,6 +19868,10 @@ PrefabInstance:
     - target: {fileID: 4779044421769256954, guid: 7007601195b674242bd656ae7ca8186c, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779044421769256956, guid: 7007601195b674242bd656ae7ca8186c, type: 3}
+      propertyPath: m_Drag
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4779044421769256956, guid: 7007601195b674242bd656ae7ca8186c, type: 3}
       propertyPath: m_IsKinematic
