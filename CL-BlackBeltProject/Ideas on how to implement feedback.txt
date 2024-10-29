@@ -1,3 +1,22 @@
 Ideas on how to implement feedback (making game less repetitive)
 
--
+-make ingredients spawn at random areas of the kitchen
+	-set the random positions in code and choose random / set a specific position for every level
+
+-make the player do obstacles to get to the ingredients after level 1
+	-would have to pause time/increase time
+
+//////////////Planning
+
+Maybes
+-add the new ingredients in during tutorial 
+-add the new ingredients in after level one
+	-add an obstacle to obtain new ingredient
+		-add 3d objects for the obstacles
+		-make a pop up to notify player (pause time or increase all game time for each level)
+			make image and add text 
+		-a door leading to the obstacle
+		-make a new scene and teleport player to the scene after they collide with the door / make it a part of the same scene but teleport player to the same location inside kitchen
+		-a particle around the ingredient 
+		
+
