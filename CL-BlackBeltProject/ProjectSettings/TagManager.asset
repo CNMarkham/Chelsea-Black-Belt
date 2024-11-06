@@ -12,6 +12,7 @@ TagManager:
   - SushiMat
   - SalmonBox
   - Plate
+  - TunaBox
   layers:
   - Default
   - TransparentFX
