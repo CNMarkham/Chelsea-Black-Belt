@@ -13,6 +13,7 @@ TagManager:
   - SalmonBox
   - Plate
   - TunaBox
+  - TunaCut
   layers:
   - Default
   - TransparentFX

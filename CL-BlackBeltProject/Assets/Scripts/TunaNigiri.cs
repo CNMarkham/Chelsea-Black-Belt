@@ -21,7 +21,7 @@ public class TunaNigiri : MonoBehaviour
             rice.SetActive(false);
             tuna.SetActive(false);
             poof.SetActive(true);
-            gameObject.SetActive(true);
+            GetComponent<MeshRenderer>().enabled = true;
         }
     }
 }
