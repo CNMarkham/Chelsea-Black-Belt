@@ -20,3 +20,28 @@ Maybes
 		-a particle around the ingredient 
 		
 
+Final Plan
+1. tutorial - learn how to make the sushi roll
+2. level 1 - sushi roll
+3. level 2 - introduce new recipe + make tuna nigiri
+4. level 3 - option 1 (make both sushi roll and tuna nigiri) OR option 2 ( make tuna nigiri)
+5. level 4 - option 1 (make multiple sushi roll/tuna nigiri) OR option 2 (make both sushi roll and tuna nigiri)
+
+how to introduce the tuna nigiri
+-text will pop up on screen
+	-check if level counter is 2 (if so, make text show up to navigate player to the new ingredient)
+	-make the stand with new ingredient active
+
+
+
+levels after introducing new recipe
+-reset the tuna ingredient back to where it was 
+
+if the text doesn't work
+-make cutscenes :( 
+
+
+
+
+
+
