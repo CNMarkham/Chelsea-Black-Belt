@@ -59,7 +59,6 @@ public class PlayerHand : MonoBehaviour
                             if (hit.collider.gameObject.GetComponent<TutorialSalmon>().played == false)
                             {
                                 hit.collider.gameObject.GetComponent<TutorialSalmon>().cutscene1.Play();
-                                //hit.collider.gameObject.GetComponent<TutorialSalmon>().played = true;
                             }
                         }
                     }

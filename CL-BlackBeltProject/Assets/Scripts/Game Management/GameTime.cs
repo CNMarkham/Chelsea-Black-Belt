@@ -10,6 +10,7 @@ public class GameTime : MonoBehaviour
     public Text gameCountdown;
     public float totalGameTime;
     public GameObject gameCursor;
+    public 
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,7 @@ public class GameTime : MonoBehaviour
                 break;
             case 2:
                 totalGameTime = 50;
+
                 break;
             case 3:
                 totalGameTime = 45;
@@ -28,6 +30,7 @@ public class GameTime : MonoBehaviour
                 totalGameTime = 35;
                 break;
         }
+
     }
 
     // Update is called once per frame
@@ -37,12 +40,15 @@ public class GameTime : MonoBehaviour
         {
             gameCountdown.text = "";
             return;
-        } 
+        }
 
-        totalGameTime -= Time.deltaTime;        
-        //sets GameCountdown's text to rounded number of totalGameTime
-        gameCountdown.text = Mathf.Round(totalGameTime).ToString();      
-
+        if (levelCounter >= 3)
+        {
+            totalGameTime -= Time.deltaTime;       
+            //sets GameCountdown's text to rounded number of totalGameTime
+             gameCountdown.text = Mathf.Round(totalGameTime).ToString();  
+        }
+    
         if (totalGameTime <= 0)
         {   //loads lose scene
             SceneManager.LoadScene("RanOutOfTime(Lose)");
