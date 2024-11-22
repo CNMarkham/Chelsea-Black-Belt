@@ -21,7 +21,9 @@ public class GameTime : MonoBehaviour
                 break;
             case 2:
                 totalGameTime = 50;
-
+                //play cutscene for ingredient
+                //freeze timer
+                //disable salmon in fridge, seaweed and other stuff
                 break;
             case 3:
                 totalGameTime = 45;
