@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Playables;
 
 public class GameTime : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class GameTime : MonoBehaviour
     public Text gameCountdown;
     public float totalGameTime;
     public GameObject gameCursor;
-    public 
+    public PlayableDirector tunaCutscene;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +22,7 @@ public class GameTime : MonoBehaviour
                 break;
             case 2:
                 totalGameTime = 50;
-                //play cutscene for ingredient
-                //freeze timer
+                tunaCutscene.Play();
                 //disable salmon in fridge, seaweed and other stuff
                 break;
             case 3:
@@ -44,12 +44,13 @@ public class GameTime : MonoBehaviour
             return;
         }
 
-        if (levelCounter >= 3)
+        if (tunaCutscene.state != PlayState.Playing)
         {
             totalGameTime -= Time.deltaTime;       
             //sets GameCountdown's text to rounded number of totalGameTime
-             gameCountdown.text = Mathf.Round(totalGameTime).ToString();  
+             gameCountdown.text = Mathf.Round(totalGameTime).ToString();
         }
+  
     
         if (totalGameTime <= 0)
         {   //loads lose scene
