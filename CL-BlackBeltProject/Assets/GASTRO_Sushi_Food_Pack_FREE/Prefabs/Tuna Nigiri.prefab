@@ -82,11 +82,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7573258894961357655, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
   m_PrefabInstance: {fileID: 3398039648831662056}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5745524006141259619 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6959311203462711435, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
-  m_PrefabInstance: {fileID: 3398039648831662056}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8591052317351560706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -175,6 +170,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 41ec0b2ce5e91794e857b7fd1abcceaf, type: 3}
+      propertyPath: m_TagString
+      value: TunaNigiri
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -182,9 +181,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 5058067782930846911}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 41ec0b2ce5e91794e857b7fd1abcceaf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1026844194762593149}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 41ec0b2ce5e91794e857b7fd1abcceaf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1058334769016410505}
@@ -202,21 +198,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 41ec0b2ce5e91794e857b7fd1abcceaf, type: 3}
   m_PrefabInstance: {fileID: 8591052317351560706}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1026844194762593149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8933141929609427795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afd3cad15342bde4b974946678028ded, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rice: {fileID: 0}
-  tuna: {fileID: 0}
-  poof: {fileID: 5745524006141259619}
 --- !u!54 &1058334769016410505
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -7,6 +7,8 @@ public class TunaNigiri : MonoBehaviour
     public GameObject rice;
     public GameObject tuna;
     public GameObject poof;
+    public GameObject tunaNigiriPrefab;
+    public Transform tunaNigiriPos;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,7 @@ public class TunaNigiri : MonoBehaviour
             rice.SetActive(false);
             tuna.SetActive(false);
             poof.SetActive(true);
-            GetComponent<MeshRenderer>().enabled = true;
+            Instantiate(tunaNigiriPrefab, tunaNigiriPos.position, Quaternion.identity); 
         }
     }
 }

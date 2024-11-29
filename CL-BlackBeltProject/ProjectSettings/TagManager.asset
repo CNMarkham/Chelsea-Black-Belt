@@ -14,6 +14,7 @@ TagManager:
   - Plate
   - TunaBox
   - TunaCut
+  - TunaNigiri
   layers:
   - Default
   - TransparentFX
