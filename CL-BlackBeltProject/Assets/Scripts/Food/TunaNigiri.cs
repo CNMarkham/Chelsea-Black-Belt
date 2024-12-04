@@ -6,13 +6,13 @@ public class TunaNigiri : MonoBehaviour
 {
     public GameObject rice;
     public GameObject tuna;
-    public GameObject poof;
-    public GameObject tunaNigiriPrefab;
-    public Transform tunaNigiriPos;
+    public ParticleSystem poof;
+    public GameObject[] tunaNigiris;
+    public int counter;
     // Start is called before the first frame update
     void Start()
     {
-        
+        counter = 0;
     }
 
     // Update is called once per frame
@@ -22,8 +22,24 @@ public class TunaNigiri : MonoBehaviour
         {
             rice.SetActive(false);
             tuna.SetActive(false);
-            poof.SetActive(true);
-            Instantiate(tunaNigiriPrefab, tunaNigiriPos.position, Quaternion.identity); 
+            poof.Play();           
+          
+            //enable 1 of the 3 nigiris in the array
+            if (counter == 0)
+            {
+                tunaNigiris[0].SetActive(true);
+                counter += 1;
+            }          
+            //enable a different one
+            else if (counter == 1)
+            {
+                tunaNigiris[1].SetActive(true);
+                counter += 1;
+            }
+            else if (counter == 2)
+            {
+                tunaNigiris[2].SetActive(true);
+            }
         }
     }
 }

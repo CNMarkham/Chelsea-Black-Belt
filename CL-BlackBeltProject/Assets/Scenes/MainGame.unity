@@ -709,12 +709,17 @@ PrefabInstance:
       value: Tuna Nigiri (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5745524006141259619, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
@@ -2129,12 +2134,17 @@ PrefabInstance:
       value: Tuna Nigiri
       objectReference: {fileID: 0}
     - target: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5745524006141259619, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
@@ -2364,12 +2374,17 @@ PrefabInstance:
       value: Tuna Nigiri (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5745524006141259619, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
@@ -4679,7 +4694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &598805175
 Transform:
   m_ObjectHideFlags: 0
@@ -5015,6 +5030,104 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &624801144
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1849521926}
+    m_Modifications:
+    - target: {fileID: 6987362521790012038, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 35.1694
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 41.7871
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.929005
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 2.6645355e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.000000021855692
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_Name
+      value: Tuna Nigiri 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
+    m_RemovedGameObjects:
+    - {fileID: 5745524006141259619, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 624801147}
+  m_SourcePrefab: {fileID: 100100000, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+--- !u!4 &624801145 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+  m_PrefabInstance: {fileID: 624801144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &624801146 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+  m_PrefabInstance: {fileID: 624801144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &624801147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624801146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9ae4126da2712489313d85ca09bc42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toEnable: {fileID: 1006409067}
+  triggerTag: TunaPlate
 --- !u!1 &636788806
 GameObject:
   m_ObjectHideFlags: 0
@@ -5861,6 +5974,104 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &840589657
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1849521926}
+    m_Modifications:
+    - target: {fileID: 6987362521790012038, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 35.1694
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 41.7871
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.929005
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 2.6645355e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.000000021855692
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_Name
+      value: Tuna Nigiri 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
+    m_RemovedGameObjects:
+    - {fileID: 5745524006141259619, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 840589660}
+  m_SourcePrefab: {fileID: 100100000, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+--- !u!4 &840589658 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8120893848461517289, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+  m_PrefabInstance: {fileID: 840589657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &840589659 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+  m_PrefabInstance: {fileID: 840589657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &840589660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840589659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9ae4126da2712489313d85ca09bc42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toEnable: {fileID: 911766711}
+  triggerTag: TunaPlate
 --- !u!1 &848749037 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2556962896560291593, guid: 5c49f07c9c7004a439979a42caaf716b, type: 3}
@@ -11816,7 +12027,7 @@ PlayableDirector:
   - key: {fileID: 6487946116154252781, guid: d4be5fc4fc6e60040869e15a63853fc0, type: 2}
     value: {fileID: 1362137476}
   - key: {fileID: 5030044996451869925, guid: d4be5fc4fc6e60040869e15a63853fc0, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1636846236}
   - key: {fileID: 5077744691164994662, guid: d4be5fc4fc6e60040869e15a63853fc0, type: 2}
     value: {fileID: 243170480}
   - key: {fileID: -106377534084495997, guid: d4be5fc4fc6e60040869e15a63853fc0, type: 2}
@@ -12446,14 +12657,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1051441431 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6959311203462711435, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
-  m_PrefabInstance: {fileID: 1320462917}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1051441432 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7573258894961357655, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
+  m_PrefabInstance: {fileID: 1320462917}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1051441434 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5867909504776426732, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
   m_PrefabInstance: {fileID: 1320462917}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1080524339
@@ -12918,7 +13129,7 @@ GameObject:
   - component: {fileID: 1163873013}
   m_Layer: 0
   m_Name: TunaPlate
-  m_TagString: Plate
+  m_TagString: TunaPlate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14530,8 +14741,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 1413263337}
     m_Modifications:
     - target: {fileID: 5867909504776426732, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5867909504776426732, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
       propertyPath: playOnAwake
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6959311203462711435, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
       propertyPath: m_Name
@@ -14539,7 +14754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6959311203462711435, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7573258894961357655, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15554,9 +15769,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rice: {fileID: 1528427409}
   tuna: {fileID: 2074540849}
-  poof: {fileID: 1051441431}
-  tunaNigiriPrefab: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
-  tunaNigiriPos: {fileID: 256921343}
+  poof: {fileID: 1051441434}
+  tunaNigiris:
+  - {fileID: 1801931917}
+  - {fileID: 840589659}
+  - {fileID: 624801146}
+  counter: 0
 --- !u!1001 &1414643046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17208,6 +17426,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6431023949758316596, guid: cd44af195fe2e02459c0ea4f9a9fc854, type: 3}
   m_PrefabInstance: {fileID: 1613354125}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1636846236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6959311203462711435, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
+  m_PrefabInstance: {fileID: 1709448917}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1646805358
 GameObject:
   m_ObjectHideFlags: 0
@@ -18831,6 +19054,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6431023949758316596, guid: cd44af195fe2e02459c0ea4f9a9fc854, type: 3}
   m_PrefabInstance: {fileID: 1785907805}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1801931917 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+  m_PrefabInstance: {fileID: 1261580922770673346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1801931920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801931917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9ae4126da2712489313d85ca09bc42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toEnable: {fileID: 1813175408}
+  triggerTag: TunaPlate
 --- !u!1001 &1805443994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19395,6 +19637,8 @@ Transform:
   - {fileID: 598805175}
   - {fileID: 1163873012}
   - {fileID: 256921343}
+  - {fileID: 840589658}
+  - {fileID: 624801145}
   - {fileID: 1277687872}
   - {fileID: 2074540850}
   m_Father: {fileID: 0}
@@ -22929,7 +23173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
       propertyPath: m_Name
-      value: Tuna Nigiri Position
+      value: Tuna Nigiri 1
       objectReference: {fileID: 0}
     - target: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
       propertyPath: m_IsActive
@@ -22941,12 +23185,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
-    - {fileID: 8525086509708025932, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
-    - {fileID: 1058334769016410505, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
     m_RemovedGameObjects:
     - {fileID: 5745524006141259619, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8933141929609427795, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1801931920}
   m_SourcePrefab: {fileID: 100100000, guid: 5ccc3b3d431b9064ba724b4561dc643b, type: 3}
 --- !u!1 &1323608338033282471
 GameObject:
