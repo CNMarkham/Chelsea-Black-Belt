@@ -1,5 +1,9 @@
 Ideas on how to implement feedback (making game less repetitive)
 
+
+
+
+
 -make ingredients spawn at random areas of the kitchen
 	-set the random positions in code and choose random / set a specific position for every level
 
@@ -22,19 +26,24 @@ Maybes
 
 final plan
 -tutorial (shows how to make the sushi roll), 
+
 -level one (make sushi roll), 
+
 -level 2 (introduce new ingredient-tuna, to make tuna nigiri)
 	-ingredient will appear on the empty counter
 	- text will appear to explain how to make the tuna nigiri
+
+
 	-signs around the kitchen will change (enable other signs and 	turn off previous signs)
--level 3 (make sushi roll),
+-level 3 (make sushi roll) -the ingredients will spawn at random positions
+
 level 4 (make both sushi roll and tuna nigiri)
 
-how to make the tuna nigiri
--pick up the tuna
--place tuna and rice onto sushi mat
--wait _ seconds (particle will appear)
--tuna nigiri is done!
+
+additional things
+-making signs around the room
+-make a pop up (on side or at the top of screen) that will have a picture of what to make 
+
 
 
 

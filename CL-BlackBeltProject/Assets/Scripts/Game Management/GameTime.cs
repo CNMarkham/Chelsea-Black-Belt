@@ -12,6 +12,8 @@ public class GameTime : MonoBehaviour
     public float totalGameTime;
     public GameObject gameCursor;
     public PlayableDirector tunaCutscene;
+    public GameObject seaweed;
+    public GameObject salmon;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +24,10 @@ public class GameTime : MonoBehaviour
                 break;
             case 2:
                 totalGameTime = 50;
-                tunaCutscene.Play();
+                tunaCutscene.Play();                
                 //disable salmon in fridge, seaweed and other stuff
+                seaweed.SetActive(false);
+                salmon.SetActive(false);
                 break;
             case 3:
                 totalGameTime = 45;

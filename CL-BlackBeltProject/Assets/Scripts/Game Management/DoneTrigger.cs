@@ -40,5 +40,10 @@ public class DoneTrigger : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
             }     
         }  
+
+        if (other.tag == "TunaPlate" && alreadyCollidedOnce == false)
+        {
+
+        }
     }
 }
