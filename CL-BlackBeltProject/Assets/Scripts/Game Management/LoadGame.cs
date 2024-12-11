@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadGame : MonoBehaviour
 {
+    public GameTime gameTime;
     public void SceneChanger()
     {
         SceneManager.LoadScene("MainGame");
@@ -28,6 +29,8 @@ public class LoadGame : MonoBehaviour
     public void RestartGame()
     {
         GameTime.levelCounter = 1;
+        gameTime.tunaPlate.SetActive(false);
+        gameTime.sushiPlate.SetActive(true);
         SceneManager.LoadScene("MainGame");
     }
 }

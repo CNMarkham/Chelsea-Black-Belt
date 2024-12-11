@@ -32,10 +32,9 @@ final plan
 -level 2 (introduce new ingredient-tuna, to make tuna nigiri)
 	-ingredient will appear on the empty counter
 	- text will appear to explain how to make the tuna nigiri
-
-
 	-signs around the kitchen will change (enable other signs and 	turn off previous signs)
--level 3 (make sushi roll) -the ingredients will spawn at random positions
+
+-level 3 (make sushi roll) -the ingredients will spawn at random positions (hidden salmon boxes)
 
 level 4 (make both sushi roll and tuna nigiri)
 
