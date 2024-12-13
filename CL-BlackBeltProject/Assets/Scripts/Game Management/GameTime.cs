@@ -18,6 +18,8 @@ public class GameTime : MonoBehaviour
     public GameObject SushiRollSigns;
     public GameObject tunaPlate;
     public GameObject sushiPlate;
+    public GameObject tunaStand;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,7 @@ public class GameTime : MonoBehaviour
                 break;
             case 2:
                 totalGameTime = 50;
+                tunaStand.SetActive(true);
                 tunaCutscene.Play();                
                 //disable salmon in fridge, seaweed and other stuff
                 seaweed.SetActive(false);
@@ -42,6 +45,8 @@ public class GameTime : MonoBehaviour
                 break;
             case 3:
                 totalGameTime = 45;
+                sushiPlate.SetActive(true);
+                SushiRollSigns.SetActive(true);
                 break;
             case 4:
                 totalGameTime = 35;
