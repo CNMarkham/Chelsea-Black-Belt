@@ -31,7 +31,7 @@ public class GameTime : MonoBehaviour
                 SushiRollSigns.SetActive(true);
                 break;
             case 2:
-                totalGameTime = 50;
+                totalGameTime = 55;
                 tunaStand.SetActive(true);
                 tunaCutscene.Play();                
                 //disable salmon in fridge, seaweed and other stuff
@@ -44,12 +44,12 @@ public class GameTime : MonoBehaviour
                 tunaPlate.SetActive(true);
                 break;
             case 3:
-                totalGameTime = 45;
+                totalGameTime = 50;
                 sushiPlate.SetActive(true);
                 SushiRollSigns.SetActive(true);
                 break;
             case 4:
-                totalGameTime = 35;
+                totalGameTime = 40;
                 break;
         }
 
