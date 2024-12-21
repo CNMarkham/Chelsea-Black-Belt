@@ -1233,6 +1233,8 @@ PlayableDirector:
     value: {fileID: 254993343}
   - key: {fileID: 1119397795102336413, guid: a4c453f45881cdc408c15e9740ea3e3c, type: 2}
     value: {fileID: 1362137476}
+  - key: {fileID: -576105221719092509, guid: a4c453f45881cdc408c15e9740ea3e3c, type: 2}
+    value: {fileID: 983273900}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &129974904
@@ -14732,7 +14734,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1853315474}
+    m_TransformParent: {fileID: 1849521926}
     m_Modifications:
     - target: {fileID: 6959311203462711435, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
       propertyPath: m_Name
@@ -14744,43 +14746,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7573258894961357655, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
       propertyPath: m_LocalScale.x
-      value: -1.2333331
+      value: -0.36999997
       objectReference: {fileID: 0}
     - target: {fileID: 7573258894961357655, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
       propertyPath: m_LocalScale.y
-      value: -1.2333331
+      value: -0.36999992
       objectReference: {fileID: 0}
     - target: {fileID: 7573258894961357655, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
       propertyPath: m_LocalScale.z
-      value: -1.2333332
+      value: -0.36999992
       objectReference: {fileID: 0}
     - target: {fileID: 7573258894961357655, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0029691064
+      value: 35.243156
       objectReference: {fileID: 0}
     - target: {fileID: 7573258894961357655, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.06355285
+      value: 41.804367
       objectReference: {fileID: 0}
     - target: {fileID: 7573258894961357655, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0035476678
+      value: -19.105705
       objectReference: {fileID: 0}
     - target: {fileID: 7573258894961357655, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7573258894961357655, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.5
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7573258894961357655, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7573258894961357655, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.5
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7573258894961357655, guid: 9cd01e747fb32b54496bb235217a51b8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -17059,8 +17061,6 @@ MonoBehaviour:
   movement: {fileID: 963194229}
   confetti: {fileID: 1333233459}
   gameCursor: {fileID: 1362137476}
-  sushiPlate: {fileID: 0}
-  tunaPlate: {fileID: 0}
 --- !u!1 &1214278079
 GameObject:
   m_ObjectHideFlags: 0
@@ -17361,6 +17361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeline: {fileID: 1247485042}
+  sushiSigns: {fileID: 825257797}
 --- !u!1 &1273563583
 GameObject:
   m_ObjectHideFlags: 0
@@ -20960,7 +20961,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -444.2, y: 271}
+  m_AnchoredPosition: {x: -672, y: 271.00003}
   m_SizeDelta: {x: 198.1761, y: 217.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1583500263
@@ -23810,11 +23811,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4062684107545870671, guid: 705b15c93d266224bba5a7105b87e8c8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.698566
+      value: -20.4554
       objectReference: {fileID: 0}
     - target: {fileID: 4062684107545870671, guid: 705b15c93d266224bba5a7105b87e8c8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5876312
+      value: 2.181
       objectReference: {fileID: 0}
     - target: {fileID: 4062684107545870671, guid: 705b15c93d266224bba5a7105b87e8c8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24680,6 +24681,7 @@ Transform:
   - {fileID: 1785907806}
   - {fileID: 2017770783}
   - {fileID: 1853315474}
+  - {fileID: 983273899}
   - {fileID: 1274782216}
   - {fileID: 1721650769}
   - {fileID: 1528427413}
@@ -24822,9 +24824,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4062684107545870671, guid: 705b15c93d266224bba5a7105b87e8c8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1294177309}
-    - targetCorrespondingSourceObject: {fileID: 4062684107545870671, guid: 705b15c93d266224bba5a7105b87e8c8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 983273899}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3686861530178378741, guid: 705b15c93d266224bba5a7105b87e8c8, type: 3}
       insertIndex: -1
@@ -25146,6 +25145,8 @@ MonoBehaviour:
   tunaPlate: {fileID: 1163873011}
   sushiPlate: {fileID: 598805174}
   tunaStand: {fileID: 463726141}
+  sushiRollImage: {fileID: 1315549899}
+  tunaNigiriImage: {fileID: 1583500261}
 --- !u!4 &1861107226
 Transform:
   m_ObjectHideFlags: 0

@@ -10,8 +10,6 @@ public class DoneTrigger : MonoBehaviour
     public Movement movement;
     public GameObject confetti;
     public GameObject gameCursor;
-    public GameObject sushiPlate;
-    public GameObject tunaPlate;
     
     private void OnTriggerEnter(Collider other)
     {
@@ -41,12 +39,6 @@ public class DoneTrigger : MonoBehaviour
                 //reloads the scene to the active scene
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
             } 
-            
-            if (GameTime.levelCounter == 4)
-            {
-                sushiPlate.SetActive(false);
-                tunaPlate.SetActive(true);
-            }
         }  
 
         if (other.tag == "TunaPlate" && alreadyCollidedOnce == false)
@@ -54,12 +46,6 @@ public class DoneTrigger : MonoBehaviour
             GameTime.levelCounter++;
             alreadyCollidedOnce = true;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
-            if (GameTime.levelCounter == 4)
-            {
-                tunaPlate.SetActive(false);
-                sushiPlate.SetActive(true);
-            }
         }
     }
 }

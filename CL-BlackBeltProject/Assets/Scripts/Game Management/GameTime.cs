@@ -19,6 +19,8 @@ public class GameTime : MonoBehaviour
     public GameObject tunaPlate;
     public GameObject sushiPlate;
     public GameObject tunaStand;
+    public GameObject sushiRollImage;
+    public GameObject tunaNigiriImage;
 
     // Start is called before the first frame update
     void Start()
@@ -27,34 +29,48 @@ public class GameTime : MonoBehaviour
         {
             case 1:
                 totalGameTime = 60;
-                sushiPlate.SetActive(true);
-                SushiRollSigns.SetActive(true);
+                SetUpSushiRoll();
                 break;
             case 2:
                 totalGameTime = 55;
-                tunaStand.SetActive(true);
-                tunaCutscene.Play();                
-                //disable salmon in fridge, seaweed and other stuff
-                seaweed.SetActive(false);
-                salmon.SetActive(false);
-                //turn on instruction signs
-                SushiRollSigns.SetActive(false);
-                tunaNigiriSigns.SetActive(true);
-                //enable tunaPlate
-                tunaPlate.SetActive(true);
+                tunaCutscene.Play();
+                SetUpNigiri();
                 break;
             case 3:
                 totalGameTime = 50;
-                sushiPlate.SetActive(true);
-                SushiRollSigns.SetActive(true);
+                SetUpSushiRoll();
                 break;
             case 4:
                 totalGameTime = 40;
+                SetUpNigiri();
+                break;
+            case 5:
+                totalGameTime = 35;
+                SetUpSushiRoll();
                 break;
         }
-
     }
 
+    void SetUpNigiri()
+    {
+        tunaNigiriImage.SetActive(true);
+        tunaStand.SetActive(true);
+        //disable salmon in fridge, seaweed and other stuff
+        seaweed.SetActive(false);
+        salmon.SetActive(false);
+        //turn on instruction signs
+        SushiRollSigns.SetActive(false);
+        tunaNigiriSigns.SetActive(true);
+        //enable tunaPlate
+        tunaPlate.SetActive(true);
+    }
+
+    void SetUpSushiRoll()
+    {
+        sushiRollImage.SetActive(true);
+        sushiPlate.SetActive(true);
+        SushiRollSigns.SetActive(true);
+    }
     // Update is called once per frame
     void Update()
     {   
