@@ -16,7 +16,7 @@ public class DoneTrigger : MonoBehaviour
         if (other.tag == "Plate" && alreadyCollidedOnce == false)
         {
             confetti.SetActive(true);
-            if (GameTime.levelCounter >= 4)
+            if (GameTime.levelCounter >= 5)
             {
                 SceneManager.LoadScene("Win");
                 Cursor.lockState = CursorLockMode.None;

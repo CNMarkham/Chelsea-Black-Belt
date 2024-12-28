@@ -20,12 +20,22 @@ public class RandomSalmonBox : MonoBehaviour
     void Update()
     {
         if (GameTime.levelCounter == 3 && salmonBox.activeSelf)
-        {
-            poof.SetActive(true);           
-            salmonBox.SetActive(false);            
+        {           
             hiddenSalmonBoxCutscene.Play();
-            var randomPos = hiddenSalmonBoxes[Random.Range(0, hiddenSalmonBoxes.Length)];
-            randomPos.SetActive(true);
+            HiddenSalmonBox();
         }
+
+        if (GameTime.levelCounter == 5 && salmonBox.activeSelf)
+        {
+            HiddenSalmonBox();
+        }
+    }
+
+    void HiddenSalmonBox()
+    {
+        poof.SetActive(true);
+        salmonBox.SetActive(false);
+        var randomPos = hiddenSalmonBoxes[Random.Range(0, hiddenSalmonBoxes.Length)];
+        randomPos.SetActive(true);
     }
 }
