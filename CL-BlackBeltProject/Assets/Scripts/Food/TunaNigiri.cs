@@ -31,17 +31,17 @@ public class TunaNigiri : MonoBehaviour
             tunaNigiris[0].SetActive(true);
 
         }
-        if (rice2.activeSelf && tuna2.activeSelf)
+        if (rice.activeSelf && tuna2.activeSelf)
         {
-            rice2.SetActive(false);
+            rice.SetActive(false);
             tuna2.SetActive(false);
             poof.Play();
             tunaNigiris[1].SetActive(true);
 
         }
-        if (rice3.activeSelf && tuna3.activeSelf)
+        if (rice.activeSelf && tuna3.activeSelf)
         {
-            rice3.SetActive(false);
+            rice.SetActive(false);
             tuna3.SetActive(false);
             poof.Play();
             tunaNigiris[2].SetActive(true);

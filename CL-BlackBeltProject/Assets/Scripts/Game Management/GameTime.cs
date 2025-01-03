@@ -41,11 +41,11 @@ public class GameTime : MonoBehaviour
                 SetUpSushiRoll();
                 break;
             case 4:
-                totalGameTime = 40;
+                totalGameTime = 45;
                 SetUpNigiri();
                 break;
             case 5:
-                totalGameTime = 35;
+                totalGameTime = 40;
                 SetUpSushiRoll();
                 break;
         }

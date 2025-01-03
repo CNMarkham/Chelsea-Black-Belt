@@ -7,6 +7,7 @@ public class Pause : MonoBehaviour
 {
     public Movement movement;
     public GameObject pausedScreenMenu;
+    public GameObject popUp;
     // Update is called once per frame
     void Update()
     {
@@ -15,7 +16,7 @@ public class Pause : MonoBehaviour
             Time.timeScale = 0;
             pausedScreenMenu.SetActive(true);
             Cursor.lockState = CursorLockMode.None; 
-            movement.enabled = false;
+            movement.enabled = false;     
         }
     }
 
@@ -24,7 +25,15 @@ public class Pause : MonoBehaviour
         Time.timeScale = 1;
         pausedScreenMenu.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
-        movement.enabled = true;
+        movement.enabled = true;         
+        
+        if (GameTime.levelCounter == 0 && popUp.activeSelf)
+        {
+            Time.timeScale = 1;
+            pausedScreenMenu.SetActive(false);
+            Cursor.lockState = CursorLockMode.None;
+            movement.enabled = false;
+        }
     }
 
     public void Quit()
